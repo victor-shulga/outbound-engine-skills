@@ -1,0 +1,31 @@
+{
+  "name": "outbound-engine-skills",
+  "metadata": {
+    "description": "Full outbound execution engine for B2B service companies: 19 skills covering deliverability, list building, hypotheses, sequence copy, A/B testing, reporting and reply audits."
+  },
+  "owner": {
+    "name": "Victor Shulga",
+    "url": "https://github.com/victor-shulga"
+  },
+  "plugins": [
+    {
+      "name": "outbound-engine",
+      "source": "./",
+      "description": "19 Claude Code skills that execute the outbound block of a GTM system for B2B service companies (agencies, outsourcing, consulting): signal detection, data research, waterfall enrichment, lead scoring, hypothesis building, sequence copy (email + LinkedIn + subject lines + spintax + follow-ups + PS lines), campaign tiering/naming/orchestration, deliverability audit, A/B test analysis, campaign reports, weekly outreach report, and forensic reply audits. Built and battle-tested by Victor Shulga (Fractional CRO).",
+      "version": "0.1.0",
+      "keywords": [
+        "outbound",
+        "cold-email",
+        "linkedin",
+        "deliverability",
+        "lead-scoring",
+        "sdr",
+        "b2b",
+        "gtm"
+      ],
+      "author": {
+        "name": "Victor Shulga"
+      }
+    }
+  ]
+}

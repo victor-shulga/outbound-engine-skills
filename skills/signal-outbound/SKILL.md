@@ -17,17 +17,19 @@ Nine steps. Each ends in an artifact, and three of them end in a gate that stops
 
 | # | Step | Route to | Ends with |
 |---|---|---|---|
-| 1 | ICP and tiers | `08-icp-builder` | tier matrix + personas + anti-ICP |
-| 2 | Offer and ladder | `offer-factory`, `offer-ladder` | 5–6 scored bets, entry rung chosen |
+| 1 | ICP and tiers | `03-market-icp-persona` ⧉ | tier matrix + personas + anti-ICP |
+| 2 | Offer and entry rung | `offer-factory` ⧉ | 5–6 scored bets, entry rung chosen |
 | 3 | Signal catalog | `outbound-signal-catalog` | 50 triggers, scored, bundled |
-| 4 | Hypotheses | `06-hypothesis-builder` | 10 scored, three picked · **GATE: volume** |
+| 4 | Hypotheses | `hypothesis-builder` | 10 scored, three picked · **GATE: volume** |
 | 5 | Account list | `outbound-account-sourcing` | scored CSV · **GATE: 90% ICP spot-check** |
 | 6 | People and email | `outbound-contact-enrichment` | contacts with verified addresses |
 | 7 | Sequence | `outbound-sequence-writer` | 8 touches, both personas · **GATE: no meeting ask** |
 | 8 | Personalization | `outbound-personalization-pipeline` | two generated fields + confidence gate |
-| 9 | Launch | `26-deliverability-audit` | SPF/DKIM/DMARC, warm-up, send caps |
+| 9 | Launch | `deliverability-audit` | SPF/DKIM/DMARC, warm-up, send caps |
 
-Running later: `weekly-outreach-report` for the weekly read, `reply-audit` when replies accumulate, `22-ab-test-analyzer` for angle tests.
+Running later: `weekly-outreach-report` for the weekly read, `reply-audit` when replies accumulate, `ab-test-analyzer` for angle tests.
+
+⧉ = lives in a different plugin. `03-market-icp-persona` is in [gtm-strategy-skills](https://github.com/victor-shulga/gtm-strategy-skills), `offer-factory` in [gtm-skills](https://github.com/victor-shulga/gtm-skills). Without them installed, run steps 1–2 by hand — the path still works, it just loses the scaffolding for those two artifacts.
 
 ## The four rules that carry the whole thing
 

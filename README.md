@@ -23,6 +23,8 @@ Restart your Claude Code session after install — skills load at session start.
 
 ## Skills included
 
+Skill names carry no number prefixes: the order of the work is defined by `signal-outbound`, not by filenames.
+
 **Master**
 
 - `signal-outbound` — the nine-step path, the gates, and where runs actually fail
@@ -37,23 +39,23 @@ Restart your Claude Code session after install — skills load at session start.
 
 **Execution**
 
-- `02-signal-detection`
-- `03-copy-generation`
-- `06-hypothesis-builder`
-- `11-data-research`
-- `12-waterfall-enrichment`
-- `13-lead-scoring`
-- `15-subject-line-generator`
-- `16-spintax-randomizer`
-- `17-linkedin-sequence`
-- `19-followup-sequence`
-- `20-ps-line-generator`
-- `21-campaign-tiering`
-- `22-ab-test-analyzer`
-- `23-campaign-report`
-- `24-multi-channel-orchestrator`
-- `25-campaign-naming`
-- `26-deliverability-audit`
+- `signal-detection`
+- `copy-generation`
+- `hypothesis-builder`
+- `data-research`
+- `waterfall-enrichment`
+- `lead-scoring`
+- `subject-line-generator`
+- `spintax-randomizer`
+- `linkedin-sequence`
+- `followup-sequence`
+- `ps-line-generator`
+- `campaign-tiering`
+- `ab-test-analyzer`
+- `campaign-report`
+- `multi-channel-orchestrator`
+- `campaign-naming`
+- `deliverability-audit`
 - `reply-audit`
 - `weekly-outreach-report`
 

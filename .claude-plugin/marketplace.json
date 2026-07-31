@@ -1,7 +1,7 @@
 {
   "name": "outbound-engine-skills",
   "metadata": {
-    "description": "Full outbound execution engine for B2B service companies: 19 skills covering deliverability, list building, hypotheses, sequence copy, A/B testing, reporting and reply audits."
+    "description": "Full outbound execution engine for B2B service companies: 25 skills covering signal sourcing, list building, enrichment, hypotheses, sequence copy, personalization, deliverability, A/B testing, reporting and reply audits."
   },
   "owner": {
     "name": "Victor Shulga",
@@ -11,8 +11,8 @@
     {
       "name": "outbound-engine",
       "source": "./",
-      "description": "19 Claude Code skills that execute the outbound block of a GTM system for B2B service companies (agencies, outsourcing, consulting): signal detection, data research, waterfall enrichment, lead scoring, hypothesis building, sequence copy (email + LinkedIn + subject lines + spintax + follow-ups + PS lines), campaign tiering/naming/orchestration, deliverability audit, A/B test analysis, campaign reports, weekly outreach report, and forensic reply audits. Built and battle-tested by Victor Shulga (Fractional CRO).",
-      "version": "0.1.0",
+      "description": "25 Claude Code skills that execute the outbound block of a GTM system for B2B service companies (agencies, outsourcing, consulting). Master skill `signal-outbound` runs the full path: service page → signal catalog → scored account list from ATS job postings → named contacts with verified emails → sequence → personalization pipeline → launch, enforcing a gate between steps. Plus signal detection, data research, waterfall enrichment, lead scoring, hypothesis building, sequence copy, campaign tiering/naming/orchestration, deliverability audit, A/B analysis, campaign and weekly reports, and forensic reply audits. Built and battle-tested by Victor Shulga (Fractional CRO).",
+      "version": "0.2.0",
       "keywords": [
         "outbound",
         "cold-email",
@@ -21,7 +21,11 @@
         "lead-scoring",
         "sdr",
         "b2b",
-        "gtm"
+        "gtm",
+        "signals",
+        "personalization",
+        "enrichment",
+        "job-postings"
       ],
       "author": {
         "name": "Victor Shulga"

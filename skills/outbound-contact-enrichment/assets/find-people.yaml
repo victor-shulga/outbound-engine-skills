@@ -1,0 +1,26 @@
+kind: workflow_draft
+schemaVersion: 1
+workflowId: find-eng-leaders-by-domain
+types:
+  ApolloRequest:
+    fields:
+      include_similar_titles: boolean
+      numResults: number
+      q_organization_domains_list: string[]
+      person_titles: string[]?
+      person_seniorities: string[]?
+      person_locations: string[]?
+inputs:
+  request: ApolloRequest
+nodes:
+  findPeople:
+    title: Engineering leaders by domain
+    description: Returns the economic buyer and technical approver for one target domain.
+    uses: apolloFindPeople@1.0.0
+    config: {}
+    with:
+      request: $inputs.request
+outputs:
+  people:
+    type: unknown
+    from: $nodes.findPeople.people

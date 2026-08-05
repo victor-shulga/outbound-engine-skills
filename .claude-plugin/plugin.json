@@ -1,7 +1,7 @@
 {
   "name": "outbound-engine",
   "version": "0.5.0",
-  "description": "21 Claude Code skills that execute the outbound block of a GTM system for B2B service companies (agencies, outsourcing, consulting): a router that works out which stage you are at and enforces the gate it depends on, signal and data-point research over an existing base, prospect-list research, waterfall enrichment, two-stage scoring (pre-contact and post-contact), hypothesis building, sequence copy (email + LinkedIn + subject lines + follow-ups + PS lines), campaign tiering/naming/orchestration, deliverability audit, A/B test analysis, campaign reports, weekly outreach report, per-reply objection handling and forensic reply audits. Built and battle-tested by Victor Shulga (Fractional CRO).",
+  "description": "24 Claude Code skills that execute the outbound block of a GTM system for B2B service companies (agencies, outsourcing, consulting). A master skill routes the nine-step path and enforces the gate between steps: signal catalog, ATS job-posting sourcing, signal and data-point research over an existing base, prospect-list research with per-row costs, contact and email enrichment through a priced cascade, two-stage scoring (pre-contact and post-contact), sequence copy with interest-only CTAs, a personalization pipeline, deliverability, per-reply objection handling, forensic reply audits, A/B analysis and weekly reporting. Built and battle-tested by Victor Shulga (Fractional CRO).",
   "author": {
     "name": "Victor Shulga",
     "url": "https://github.com/victor-shulga"
@@ -12,6 +12,7 @@
     "linkedin",
     "deliverability",
     "lead-scoring",
+    "signal-based",
     "sdr",
     "b2b",
     "gtm"

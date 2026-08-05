@@ -41,8 +41,10 @@ Load, in this order:
    plus vertical packs and the data-point series (universal `D`, and per-vertical `DV` / `DA`). Each
    carries a detection route, a freshness window and a pairing note. Use when the client has no
    `signals.md` yet — and extend the catalogue rather than inventing a signal inline.
-3. `agency-signal-sourcer/resources/detection-tools.md` — tool-per-signal, credit costs, decay
-   windows; `.../scoring.md` for weights and heat-tier SLAs.
+3. *Optional, if installed:* `agency-signal-sourcer` (in the
+   [gtm-skills](https://github.com/victor-shulga/gtm-skills) repo) carries a deeper tool-per-signal
+   table with credit costs, decay windows and heat-tier SLAs. Without it, the detection ladder and
+   catalogue in this skill's own `resources/` are enough to run.
 
 If none of those exist, stop and say so. Do not invent a signal list here.
 
@@ -213,7 +215,7 @@ readable page — a database dump with a link to a kanban is not a report.
 | Which tool detects signal X, what does it cost, when does it decay | `agency-signal-sourcer` |
 | Base is too small / where do I find more accounts | `niche-data-finder`, `list-building` |
 | Turn scored accounts into a full prospect list with contacts and copy slots | client prospect-list flow |
-| Write the sequence off these signals | `sequence-writer` / `03-copy-generation` |
+| Write the sequence off these signals | `outbound-sequence-writer` |
 | Per-account pre-touch briefing | `prospect-profiler` |
 
 ## Detection traps already paid for

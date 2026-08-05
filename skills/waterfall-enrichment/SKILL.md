@@ -1,6 +1,6 @@
 ---
 name: waterfall-enrichment
-description: Use when asked to find verified emails for a contact list, run email enrichment, enrich from LinkedIn URLs, or maximise find rate through a multi-source cascade at a known cost per contact.
+description: Turns company domains into named decision-makers with verified work emails, or finds emails for contacts you already have — a people-search node keyed on domain, then a multi-source email cascade with a known cost per contact. Use when asked to enrich a list, find contacts or emails, work from LinkedIn URLs, or raise find rate without guessing patterns. Triggers include "заенрич", "знайди персон", "потрібні пошти", "find contacts", "who do we write to at these companies".
 ---
 
 # Waterfall Enrichment
@@ -15,11 +15,40 @@ Which one you are in decides everything downstream.
 
 **Entry A — you have name + company domain.** The normal case. Email finders take exactly this.
 
+**Entry A2 — you have domains and no people yet.** Find the people first, then run the email cascade
+on whatever comes back without a verified address. See the next section.
+
 **Entry B — you have a LinkedIn profile URL and nothing else.** Common after list building, and the
 one most cascades get wrong: email finders take a name and a domain, not a URL. This needs **two
 stages** — resolve the profile to name + company + domain first, then run the email cascade. A
 single-stage waterfall on a URL input returns near-zero and looks like a coverage problem when it
 is a plumbing problem.
+
+## Finding the people (Entry A2)
+
+**One people-search node keyed on domain beats a profile scraper.** A scraper crawls dozens of pages
+per company, needs a session cookie, breaks often, and still returns profiles without emails. A
+people-search node returns the same people with contact data attached, in about a minute for ten
+domains. Reach for a scraper only where the provider has no coverage.
+
+**One domain per invocation.** A single call with ten domains and a result cap of twenty does not
+give you two people per company — it returns twenty people distributed however the provider likes.
+Loop over domains instead.
+
+**Ask for two people per account, not five.** The pair you want is the one the ICP already names:
+the economic buyer (in smaller companies, often the founder) and the technical or functional
+approver who will be asked "is this real?". When both come back for the same company, that is a live
+check on the persona work — the roles invented on paper exist in the target base. When they
+consistently do not, the persona section is wrong, and it is cheaper to fix it now than after the
+copy is written.
+
+**Expect roughly one company in ten to return nothing**, and the occasional person to come back with
+an unavailable address. That is coverage, not a broken query. Confirm it by relaxing the query once —
+drop the location filter, widen the titles, add one seniority level. Still empty means the provider
+has no data, and the account goes to the LinkedIn-URL cascade or to a manual queue.
+
+A worked implementation over a workflow runner sits in `assets/find-people.yaml`, with the invocation
+and role filters documented alongside it.
 
 ## Pass 0 — audit the input before spending anything
 
@@ -131,3 +160,12 @@ flatters a bad run.
   after the input is fixed, not on a schedule.
 - Role addresses (info@, hello@, sales@) are not contacts. They belong in a separate column, never in
   a personal-address campaign.
+
+## Requirements
+
+| Integration | Used for | Required? | Setup |
+|---|---|---|---|
+| A workflow runner with a people-search node (Freckle over Apollo, or equivalent) | domain → people with contact data | for Entry A2 | authenticate, then pin the org id |
+| Email finders (LeadMagic, Findymail, or equivalents) | the email cascade | yes | your own accounts |
+| Validator (ZeroBounce or equivalent) | every result, including free ones | yes | your own account |
+| Profile resolver | the LinkedIn-URL entry point | for Entry B | part of the same runner |

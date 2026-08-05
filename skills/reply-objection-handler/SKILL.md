@@ -18,7 +18,7 @@ description: >-
   this", "score this reply", "is this lead real", "triage these replies", or a pasted conversation. The MESSAGE itself is always written in the prospect's language
   (usually English for US/UK leads).
   NOT for batch analysis of many replies at once (use reply-audit) and NOT for writing full cold
-  sequences from scratch (use sequence-writer / 03-copy-generation). This is the surgeon for ONE thread.
+  sequences from scratch (use outbound-sequence-writer). This is the surgeon for ONE thread.
 ---
 
 # Reply & Objection Handler
@@ -38,7 +38,7 @@ Relationship to neighbours:
 - **reply-audit** = the epidemiologist (analyses a BATCH, finds the systemic pattern). This skill = the
   surgeon (crafts ONE reply). They feed each other: audit findings become rules here; replies you write
   here get tagged so the next audit can aggregate them.
-- **sequence-writer / 03-copy-generation** = cold sequences from scratch. Not this.
+- **outbound-sequence-writer** = cold sequences from scratch. Not this.
 
 ---
 

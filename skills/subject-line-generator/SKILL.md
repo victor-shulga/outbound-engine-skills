@@ -61,7 +61,7 @@ Recommended default: [A/B/C] — [one-line reason]
 
 ## Notes
 
-- Run spintax across top 3 after selection to add variation at send time
+- Vary the top 3 by ANGLE, not by swapping synonyms — token-level randomisation changes nothing a filter reads and nothing a prospect notices. Different question, different fact, different frame.
 - Test subject lines systematically — track open rate by subject line variant, not campaign overall
 - If open rate is below 40%, subject line is the first thing to change before touching copy
 - Avoid: "quick question", "following up", "[First Name]" as opener — overused and filtered mentally

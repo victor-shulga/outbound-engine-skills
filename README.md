@@ -25,7 +25,7 @@ Restart your Claude Code session after install — skills load at session start.
 
 ## Skills included
 
-Skill names carry no number prefixes: the order of the work is defined by `signal-outbound`, not by filenames.
+Skill names carry no prefixes — no numbers, and no `outbound-` on skills that live inside a bundle already called outbound. The order of the work is defined by `signal-outbound`, not by filenames.
 
 **Master**
 
@@ -33,9 +33,9 @@ Skill names carry no number prefixes: the order of the work is defined by `signa
 
 **Signal-based sourcing**
 
-- `outbound-signal-catalog` — 50 triggers for one niche, scored, bundled to clear the volume gate
-- `outbound-account-sourcing` — ATS job postings → filtered, scored account list (ships with a Python filter/scoring script)
-- `outbound-personalization-pipeline` — two generated fields, a confidence gate, and the push into the sequencer
+- `signal-catalog` — 50 triggers for one niche, scored, bundled to clear the volume gate
+- `account-sourcing` — ATS job postings → filtered, scored account list (ships with a Python filter/scoring script)
+- `personalization-pipeline` — two generated fields, a confidence gate, and the push into the sequencer
 
 **Research over a base you already have**
 
@@ -51,7 +51,7 @@ Scoring is deliberately two skills. Mixing what you can read about a company wit
 
 **Copy**
 
-- `outbound-sequence-writer` — 8 touches, interest-only CTAs, separate copy per persona
+- `sequence-writer` — 8 touches, interest-only CTAs, separate copy per persona
 - `subject-line-generator` · `ps-line-generator`
 - `linkedin-sequence` — the LinkedIn side of the same hypothesis
 - `followup-sequence` — non-responders and re-engagement of a burnt base
@@ -83,6 +83,8 @@ Skills degrade gracefully: without MCP connections they work from pasted data (C
 
 ## Changelog
 
+**0.5.1** — naming aligned: the `outbound-` prefix dropped from `signal-catalog`, `account-sourcing`, `sequence-writer` and `personalization-pipeline`. Inside a bundle named outbound-engine it was the same redundancy the number prefixes were. Folder names and `name:` frontmatter now match everywhere.
+
 **0.5.0** — two lines of work merged: the signal-sourcing chain built around job postings, and a rewrite of the research and scoring skills from live client runs.
 
 - **Signal and data-point research is its own step.** `signal-research` takes an existing base and returns live signals with a URL and a date, plus the standing data points that carry every account without one. `data-research` no longer describes detection; it hands off and stays responsible for the pass order and the cost model. The 60-entry signal catalogue now ships with the skill rather than living in another repo.
@@ -91,7 +93,7 @@ Skills degrade gracefully: without MCP connections they work from pasted data (C
 - **Scoring split in two** — `prospect-scoring` and `lead-scoring`. The old single rubric scored geography and headcount that were already stop-filters: free points, identical for every surviving row, and a threshold that stopped separating anything.
 - **`reply-objection-handler` added**, with `meeting-intent-scorer` merged into it as an intent-triage step rather than shipped as a separate skill. The bundle could previously diagnose a batch of replies but not answer a single one.
 - **The master skill absorbed the router work**: a locate-the-caller step, all seven gates in one table, symptom routing for live campaigns, and a fixed hand-off format.
-- **Removed:** `spintax-randomizer` (token-level randomisation changes nothing a filter reads or a prospect notices — vary by angle instead), `signal-detection` (superseded by `signal-research`), `copy-generation` (superseded by `outbound-sequence-writer`).
+- **Removed:** `spintax-randomizer` (token-level randomisation changes nothing a filter reads or a prospect notices — vary by angle instead), `signal-detection` (superseded by `signal-research`), `copy-generation` (superseded by `sequence-writer`).
 - **Cross-repo duplicates removed.** `reply-audit`, `lead-scoring` and `weekly-outreach-report` existed in both this bundle and `gtm-skills` under the same skill name, with the copies drifting apart. They live here only.
 
 **0.1.0** — initial bundle.

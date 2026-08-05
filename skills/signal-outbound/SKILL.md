@@ -30,10 +30,10 @@ Every step below depends on one condition. Route past a failed gate and the work
 | **G1 — infrastructure** | domains authenticated, mailboxes warmed, send caps set | `deliverability-audit`. With broken sending you cannot tell weak copy from a blocked domain, so every later measurement is unreadable. |
 | **G2 — a hypothesis exists** | you can say who, on what trigger, with what offer | `hypothesis-builder`. A campaign without a stated hypothesis cannot be judged later, only argued about. |
 | **G3 — volume** | 300 accounts per event-signal hypothesis, 500 per data-point one | bundle related signals, or widen the category. Report the shortfall rather than running a test that cannot produce a readable result. |
-| **G4 — the list is really the ICP** | 90% spot-check passes | back to `outbound-account-sourcing`. Two thirds of raw results are agencies, government and universities. |
+| **G4 — the list is really the ICP** | 90% spot-check passes | back to `account-sourcing`. Two thirds of raw results are agencies, government and universities. |
 | **G5 — a reason to write now** | rows carry a dated signal or a data point with a source | `signal-research`. Without it, the no-signal queue has nothing to open with and the campaign is a mass mailing wearing a first name. |
 | **G6 — contactable** | verified addresses, or the LinkedIn route confirmed | `waterfall-enrichment`. Enrich only what already passed — it is the expensive step. |
-| **G7 — no meeting ask** | every touch ends on an interest question | back to `outbound-sequence-writer`. |
+| **G7 — no meeting ask** | every touch ends on an interest question | back to `sequence-writer`. |
 
 ## The path
 
@@ -43,12 +43,12 @@ Nine steps. Each ends in an artifact, and three of them end in a gate that stops
 |---|---|---|---|
 | 1 | ICP and tiers | `03-market-icp-persona` ⧉ | tier matrix + personas + anti-ICP |
 | 2 | Offer and entry rung | `offer-factory` ⧉ | 5–6 scored bets, entry rung chosen |
-| 3 | Signal catalog | `outbound-signal-catalog` | 50 triggers, scored, bundled |
+| 3 | Signal catalog | `signal-catalog` | 50 triggers, scored, bundled |
 | 4 | Hypotheses | `hypothesis-builder` | 10 scored, three picked · **GATE: volume** |
-| 5 | Account list | `outbound-account-sourcing`, then `signal-research` over it | scored CSV with dated evidence · **GATE: 90% ICP spot-check** |
+| 5 | Account list | `account-sourcing`, then `signal-research` over it | scored CSV with dated evidence · **GATE: 90% ICP spot-check** |
 | 6 | People and email | `waterfall-enrichment` | contacts with verified addresses |
-| 7 | Sequence | `outbound-sequence-writer` | 8 touches, both personas · **GATE: no meeting ask** |
-| 8 | Personalization | `outbound-personalization-pipeline` | two generated fields + confidence gate |
+| 7 | Sequence | `sequence-writer` | 8 touches, both personas · **GATE: no meeting ask** |
+| 8 | Personalization | `personalization-pipeline` | two generated fields + confidence gate |
 | 9 | Launch | `deliverability-audit` | SPF/DKIM/DMARC, warm-up, send caps |
 
 Running later: `weekly-outreach-report` for the weekly read, `reply-audit` when replies accumulate, `ab-test-analyzer` for angle tests.

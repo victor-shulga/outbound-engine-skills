@@ -1,5 +1,5 @@
 ---
-name: outbound-personalization-pipeline
+name: personalization-pipeline
 description: Designs the pipeline that computes per-lead personalization before the sequencer — two generated fields, a confidence gate, and a push into the sending tool. Use when the user asks how to send hyper-personalized email at volume, says "як це автоматизувати", "personalization at scale", "конвеєр", "Clay-like pipeline", or has a sequence whose first line cannot be expressed as a template variable.
 ---
 

@@ -10,7 +10,7 @@ Design a coordinated email + LinkedIn outreach sequence — with correct timing,
 ## What you need
 
 - Hypothesis name and ICP
-- Email sequence (already written or reference `outbound-sequence-writer`)
+- Email sequence (already written or reference `sequence-writer`)
 - LinkedIn sequence (already written or reference linkedin-sequence)
 - Sending tools available (Instantly/PlusVibe for email, Heyreach/Expandi for LinkedIn)
 

@@ -108,6 +108,6 @@ quarter later.
 
 ## Handoff
 
-Gate passed → queue assigned → `waterfall-enrichment` for contacts, then `outbound-sequence-writer` per
+Gate passed → queue assigned → `waterfall-enrichment` for contacts, then `sequence-writer` per
 campaign. After a reply lands, the account moves to `lead-scoring`, which starts from this profile
 and adds what only a conversation can establish.

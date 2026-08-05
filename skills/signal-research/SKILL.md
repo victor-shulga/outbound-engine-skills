@@ -215,7 +215,7 @@ readable page — a database dump with a link to a kanban is not a report.
 | Which tool detects signal X, what does it cost, when does it decay | `agency-signal-sourcer` |
 | Base is too small / where do I find more accounts | `niche-data-finder`, `list-building` |
 | Turn scored accounts into a full prospect list with contacts and copy slots | client prospect-list flow |
-| Write the sequence off these signals | `outbound-sequence-writer` |
+| Write the sequence off these signals | `sequence-writer` |
 | Per-account pre-touch briefing | `prospect-profiler` |
 
 ## Detection traps already paid for

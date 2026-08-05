@@ -1,5 +1,5 @@
 ---
-name: outbound-sequence-writer
+name: sequence-writer
 description: Writes an eight-touch email and LinkedIn sequence built on one signal, with interest-only CTAs and separate copy for the decision-maker and the champion. Use when the user says "напиши сіквенс", "write the sequence", "cold email", "потрібні листи під цю гіпотезу", or has a signal and an offer and needs the messages. Enforces the no-meeting-ask rule on every touch.
 ---
 

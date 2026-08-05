@@ -1,5 +1,5 @@
 ---
-name: outbound-signal-catalog
+name: signal-catalog
 description: Builds a 50-trigger signal catalog for one niche, scores every signal on a 5-factor weighted model, and bundles the signals that cannot reach test volume alone. Use when the user says "каталог сигналів", "signal catalog", "які сигнали брати", "по чому таргетити", "build triggers for [niche]", or is choosing what to detect before building a prospect list. Produces the raw material for hypotheses — not the hypotheses themselves.
 ---
 

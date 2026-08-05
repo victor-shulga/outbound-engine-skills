@@ -1,5 +1,5 @@
 ---
-name: outbound-account-sourcing
+name: account-sourcing
 description: Builds a filtered, scored account list from job-posting signals — pulls postings from ATS career sites via Apify, strips the two thirds of results that are agencies, government and universities, and scores every surviving company. Use when the user says "збери список", "прospect list", "build the account list", "знайди компанії за сигналом", "who is hiring for X", or needs accounts before enrichment. Requires an Apify connection.
 ---
 

@@ -1,6 +1,11 @@
 ---
 name: lead-scoring
-description: Score a lead AFTER contact — start from the pre-contact profile score and add what only a conversation reveals: engagement, confirmed deal size, the real decision path, timeline. Use when asked to rank leads you have already spoken to, prioritise a reply queue, decide who gets a call first, or recalibrate scoring bands against a real pipeline. Triggers include "score these leads", "prioritise the pipeline", "who do we call first", "rank the replies". For scoring a cold base nobody has spoken to, use `prospect-scoring`.
+description: >-
+  Score a lead AFTER contact — start from the pre-contact profile score and add what only a conversation
+  reveals: engagement, confirmed deal size, the real decision path, timeline. Use when asked to rank leads you
+  have already spoken to, prioritise a reply queue, decide who gets a call first, or recalibrate scoring bands
+  against a real pipeline. Triggers include "score these leads", "prioritise the pipeline", "who do we call
+  first", "rank the replies". For scoring a cold base nobody has spoken to, use `prospect-scoring`.
 ---
 
 # Lead Scoring

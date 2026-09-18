@@ -1,6 +1,6 @@
 # outbound-engine
 
-Full outbound execution engine for B2B service companies: 24 skills covering signal sourcing, prospect-list research, enrichment, hypotheses, sequence copy, personalization, deliverability, reply handling, A/B testing and reporting.
+Full outbound execution engine for B2B service companies: 27 skills covering ICP and personas, signal sourcing, prospect-list research, enrichment, hypotheses, sequence copy, personalization, deliverability, reply handling, A/B testing and reporting.
 
 Part of the GTM-system methodology by [Victor Shulga](https://victorshulga.com) (Fractional CRO).
 
@@ -36,6 +36,12 @@ Skill names carry no prefixes — no numbers, and no `outbound-` on skills that 
 - `signal-catalog` — 50 triggers for one niche, scored, bundled to clear the volume gate
 - `account-sourcing` — ATS job postings → filtered, scored account list (ships with a Python filter/scoring script)
 - `personalization-pipeline` — two generated fields, a confidence gate, and the push into the sequencer
+
+**ICP and personas** (added in 0.6.0 — the input every list, score and sequence below reads from)
+
+- `icp-builder` — from best customers, win/loss notes and calls → one reusable ICP file with tiers and a negative ICP
+- `persona-builder` — one role → KPI, fear, vocabulary and a messaging guide; one file per persona
+- `icp-validation` — one company → fit score out of 12 on segment / size / signal / role and a Tier 1 / Tier 2 / skip verdict
 
 **Research over a base you already have**
 

@@ -11,7 +11,8 @@ description: >-
   the interest real) and sets the CRM / sending-platform action. Use on any single reply, email,
   thread screenshot or post: "what do I reply", "objection handler", "follow up", "recover this lead",
   "score this reply", "is this lead real". NOT for batch analysis of many replies (reply-audit), NOT
-  for full cold sequences (sequence-writer).---
+  for full cold sequences (sequence-writer).
+---
 
 # Reply & Objection Handler
 

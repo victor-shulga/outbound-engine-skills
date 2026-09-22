@@ -1,25 +1,17 @@
 ---
 name: reply-objection-handler
 description: >-
-  A per-reply engine for outbound. Takes ANY single inbound reply, objection, ghost,
-  lost proposal, or trigger (a LinkedIn post, a work anniversary, company news) PLUS context, classifies
-  it on a reply taxonomy, routes it to the right play, and writes ONE ready-to-send reply or
-  follow-up in the prospect's language. Handles the full surface: hot-lead booking & recovery,
-  "not interested", incumbent / in-house, channel/routing ("we buy through our A/E or CM"), wrong
-  person, wrong geo, wrong ICP, dead data, hard-no/opt-out, timing, curious-probing, ghost bumps,
-  value-first re-engage, trigger-based outreach, lost-proposal follow-ups, and inbound-trigger cold
-  messages (replying to a post that asks for help).
-  Also triages a reply for meeting intent — how fast it must be answered and whether the interest is
-  real — and sets the CRM and sending-platform action that goes with it.
-  Use whenever you paste ONE reply / email / screenshot of a thread / lost-proposal note / a post
-  and want the next message — even a bare "what do I reply", "write the reply", "objection handler",
-  "/objection-handler", "follow up", "cold message to the post author", "value first email",
-  "recover this lead", "reply to the proposal", "follow up on the lost proposal", "what do I say to
-  this", "score this reply", "is this lead real", "triage these replies", or a pasted conversation. The MESSAGE itself is always written in the prospect's language
-  (usually English for US/UK leads).
-  NOT for batch analysis of many replies at once (use reply-audit) and NOT for writing full cold
-  sequences from scratch (use sequence-writer). This is the surgeon for ONE thread.
----
+  Per-reply engine for outbound. Takes ONE inbound reply, objection, ghost, lost proposal or trigger
+  (a LinkedIn post, a work anniversary, company news) plus context, classifies it on a reply taxonomy,
+  routes it to the right play and writes ONE ready-to-send reply or follow-up in the prospect's
+  language. Covers hot-lead booking and recovery, "not interested", incumbent / in-house, channel
+  routing ("we buy through our A/E or CM"), wrong person / geo / ICP, dead data, hard-no / opt-out,
+  timing, curious probing, ghost bumps, value-first re-engage, trigger-based outreach, lost-proposal
+  follow-ups and cold messages to a post author. Also triages meeting intent (how fast to answer, is
+  the interest real) and sets the CRM / sending-platform action. Use on any single reply, email,
+  thread screenshot or post: "what do I reply", "objection handler", "follow up", "recover this lead",
+  "score this reply", "is this lead real". NOT for batch analysis of many replies (reply-audit), NOT
+  for full cold sequences (sequence-writer).---
 
 # Reply & Objection Handler
 

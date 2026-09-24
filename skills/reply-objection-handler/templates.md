@@ -57,6 +57,38 @@ Appreciate the straight answer, [Name] — I'll leave it there for now. For when
 
 ---
 
+## WANTS_PROOF — "send samples / case study / pricing"
+
+**Trigger:** "Can you send some samples?" / "Do you have a case study?" / "What does pricing look like?"
+**Play:** One short paragraph, ONE link or asset (the closest match, not the whole portfolio), one
+qualifying question. For pricing: a range or the unit you price by, never a full rate card.
+
+```
+Sure, [Name]. The closest match to what you described is [case / sample]: [one line on the result,
+with the number]. Here it is: [one link].
+Is that the kind of [project / scope] you have on the table right now, or is it further out?
+```
+*Source: built from the WANTS_PROOF play in SKILL.md; not yet field-proven. Replace with the first
+winner that comes in.*
+
+---
+
+## TIMING / TOO_BUSY — "bad timing, circle back later"
+
+**Trigger:** "Bad timing, we're swamped." / "Circle back next quarter."
+**Play:** Respect it, leave one value seed, offer a concrete future window. Yes → create the dated
+task in the CRM the same day; a vague "later" never gets followed up.
+
+```
+Makes sense, [Name]. [Month / quarter] is a heavy stretch, so I'll step back until then. One thing
+worth having ready when it calms down: [one-line value seed].
+Would [concrete window: early October / after your Q3 close] be a better time to pick this up?
+```
+*Source: built from the TIMING play in SKILL.md; not yet field-proven. Replace with the first
+winner that comes in.*
+
+---
+
 ## INCUMBENT / IN-HOUSE
 
 **Trigger:** "We mostly coordinate in-house." / "We have trusted partners." / "We're all set."
@@ -122,6 +154,23 @@ a headache on a [Company] job, we plug in as overflow support — no need to be 
 10-min intro?
 ```
 *Each subsequent bump must use a DIFFERENT angle (case/number, then a trigger). Don't repeat the point.*
+
+---
+
+## WRONG_ICP / VALUE-CHAIN MISMATCH — they provide the service themselves
+
+**Trigger:** "We do [your service] in-house for our own clients." / "We're not a buyer of this."
+**Play:** Usually drop. If the ACCOUNT is still valid (another team there buys), one referral ask.
+If it is not, no reply is needed: tag `WRONG_ICP`, remove from the campaign, and feed the reason
+back to the list filter so the next pull excludes lookalikes.
+
+```
+Thanks for explaining, [Name], that clears it up. If [Company] does [service] in-house, we're not a
+fit for your team and I'll close this on my side.
+Is there another group at [Company] that buys [service] rather than builds it?
+```
+*Source: built from the WRONG_ICP play in SKILL.md; not yet field-proven. Replace with the first
+winner that comes in.*
 
 ---
 

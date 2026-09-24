@@ -1,12 +1,12 @@
 # outbound-engine
 
-Full outbound execution engine for B2B service companies: 27 skills covering ICP and personas, signal sourcing, prospect-list research, enrichment, hypotheses, sequence copy, personalization, deliverability, reply handling, A/B testing and reporting.
+Full outbound execution engine for B2B service companies: 28 skills covering ICP and personas, signal sourcing, prospect-list research, enrichment, hypotheses, sequence copy, personalization, deliverability, reply handling, A/B testing and reporting.
 
 Part of the GTM-system methodology by [Victor Shulga](https://victorshulga.com) (Fractional CRO).
 
 ## Start here
 
-**`signal-outbound`** is the master skill. It runs the full path — service page → signal catalog → scored account list → named contacts with verified emails → sequence → personalization pipeline → launch — routing to the right skill at each step and enforcing the gate between them.
+**`signal-outbound`** is the master skill. It runs the full path — service page → signal catalog → scored account list → named contacts with verified emails → sequence → personalization pipeline → base check → launch — routing to the right skill at each step and enforcing the gate between them.
 
 Ask for it in plain words: *"run the outbound process for [company]"*, *"where do I start"*, *"build me a campaign"*. Enter mid-path if you already hold an artifact — it checks that artifact against its own gate and moves forward instead of restarting. It also routes by symptom when a campaign is already running badly, and it will tell you when the problem is the offer rather than the outbound.
 
@@ -29,7 +29,7 @@ Skill names carry no prefixes — no numbers, and no `outbound-` on skills that 
 
 **Master**
 
-- `signal-outbound` — the nine-step path, the seven gates, symptom routing, and where runs actually fail
+- `signal-outbound` — the ten-step path, the eight gates, symptom routing, and where runs actually fail
 
 **Signal-based sourcing**
 
@@ -65,6 +65,7 @@ Scoring is deliberately two skills. Mixing what you can read about a company wit
 
 **Launch and read**
 
+- `pre-launch-data-check` — the final file, row by row, in seven layers: suppression, verification, rendered variables, routing, hygiene, signal freshness, volume. GO / GO WITH FIXES / STOP, with the rows to fix (ships a Python script).
 - `deliverability-audit` — domains, mailboxes, SPF/DKIM/DMARC, warm-up. Runs before anything is sent, not after the numbers go bad.
 - `reply-objection-handler` — ONE reply in, one ready-to-send message out: triage for intent and speed, classify the objection, write the response, set the CRM and platform action
 - `reply-audit` — the batch view: many replies down to root cause — targeting, message, or pitch
@@ -88,6 +89,8 @@ The two reply skills are a pair: the handler is the surgeon on one thread, the a
 Skills degrade gracefully: without MCP connections they work from pasted data (CSV, sheets, text).
 
 ## Changelog
+
+**0.7.0** — `pre-launch-data-check` added: the last stop-filter before upload. The path had gates for fit, volume, proof and verified addresses, but nothing looked at the final file as it gets sent, so a current client, an unrendered `{{first_line}}` or a 30% catch-all batch could still go out. The check runs seven layers over the rows and returns GO / GO WITH FIXES / STOP with a rows-to-fix file; `signal-outbound` now has ten steps and a G8 gate.
 
 **0.5.1** — naming aligned: the `outbound-` prefix dropped from `signal-catalog`, `account-sourcing`, `sequence-writer` and `personalization-pipeline`. Inside a bundle named outbound-engine it was the same redundancy the number prefixes were. Folder names and `name:` frontmatter now match everywhere.
 

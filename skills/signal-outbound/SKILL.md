@@ -34,10 +34,11 @@ Every step below depends on one condition. Route past a failed gate and the work
 | **G5 — a reason to write now** | rows carry a dated signal or a data point with a source | `signal-research`. Without it, the no-signal queue has nothing to open with and the campaign is a mass mailing wearing a first name. |
 | **G6 — contactable** | verified addresses, or the LinkedIn route confirmed | `waterfall-enrichment`. Enrich only what already passed — it is the expensive step. |
 | **G7 — no meeting ask** | every touch ends on an interest question | back to `sequence-writer`. |
+| **G8 — the file is clean** | final CSV passes the seven-layer check: no suppressed contacts, no invalid addresses, every variable rendered | `pre-launch-data-check`. One current client or one broken `{{first_line}}` in the upload costs more than a day's delay. |
 
 ## The path
 
-Nine steps. Each ends in an artifact, and three of them end in a gate that stops the run.
+Ten steps. Each ends in an artifact, and four of them end in a gate that stops the run.
 
 | # | Step | Route to | Ends with |
 |---|---|---|---|
@@ -49,7 +50,8 @@ Nine steps. Each ends in an artifact, and three of them end in a gate that stops
 | 6 | People and email | `waterfall-enrichment` | contacts with verified addresses |
 | 7 | Sequence | `sequence-writer` | 8 touches, both personas · **GATE: no meeting ask** |
 | 8 | Personalization | `personalization-pipeline` | two generated fields + confidence gate |
-| 9 | Launch | `deliverability-audit` | SPF/DKIM/DMARC, warm-up, send caps |
+| 9 | Base check | `pre-launch-data-check` | GO verdict + rows-to-fix file · **GATE: clean file** |
+| 10 | Launch | `deliverability-audit` | SPF/DKIM/DMARC, warm-up, send caps |
 
 Running later: `weekly-outreach-report` for the weekly read, `reply-audit` when replies accumulate, `ab-test-analyzer` for angle tests.
 

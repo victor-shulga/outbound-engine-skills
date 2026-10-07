@@ -42,7 +42,7 @@ Ten steps. Each ends in an artifact, and four of them end in a gate that stops t
 
 | # | Step | Route to | Ends with |
 |---|---|---|---|
-| 1 | ICP and tiers | `03-market-icp-persona` ⧉ | tier matrix + personas + anti-ICP |
+| 1 | ICP and tiers | `gtm-market-icp-persona` ⧉ | tier matrix + personas + anti-ICP |
 | 2 | Offer and entry rung | `offer-factory` ⧉ | 5–6 scored bets, entry rung chosen |
 | 3 | Signal catalog | `signal-catalog` | 50 triggers, scored, bundled |
 | 4 | Hypotheses | `hypothesis-builder` | 10 scored, three picked · **GATE: volume** |
@@ -55,7 +55,7 @@ Ten steps. Each ends in an artifact, and four of them end in a gate that stops t
 
 Running later: `weekly-outreach-report` for the weekly read, `reply-audit` when replies accumulate, `ab-test-analyzer` for angle tests.
 
-⧉ = lives in a different plugin. `03-market-icp-persona` is in [gtm-strategy-skills](https://github.com/victor-shulga/gtm-strategy-skills), `offer-factory` in [gtm-skills](https://github.com/victor-shulga/gtm-skills). Without them installed, run steps 1–2 by hand — the path still works, it just loses the scaffolding for those two artifacts.
+⧉ = lives in a different plugin. `gtm-market-icp-persona` is in [gtm-strategy-skills](https://github.com/victor-shulga/gtm-strategy-skills), `offer-factory` in [gtm-skills](https://github.com/victor-shulga/gtm-skills). Without them installed, run steps 1–2 by hand — the path still works, it just loses the scaffolding for those two artifacts.
 
 ## The four rules that carry the whole thing
 

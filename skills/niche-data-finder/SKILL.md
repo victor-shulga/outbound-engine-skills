@@ -31,8 +31,8 @@ signal-catalog / signal-research   →   niche-data-finder   →   data-research
                                         signals can be listed)
 ```
 
-Also used by the gtm-strategy pack: `03-market-icp-persona` (where the ICP is visible),
-`04-market-sizing` (which sources give a countable universe) and `11-channels-plan` (which channels
+Also used by the gtm-strategy pack: `gtm-market-icp-persona` (where the ICP is visible),
+`gtm-market-sizing` (which sources give a countable universe) and `gtm-channels-plan` (which channels
 the data supports).
 
 ## Inputs (ask once, in one message, only what is missing)
@@ -173,7 +173,7 @@ Keep the rejected list short; it shows the user what was considered and saves th
   evidenced list; `account-sourcing` handles the job-posting source end to end.
 - `signal-research` re-scans the resulting base when signals expire; `waterfall-enrichment` adds
   contacts once accounts are chosen.
-- `04-market-sizing` (pack gtm-strategy-skills) can use the base-layer counts as a bottom-up
+- `gtm-market-sizing` (pack gtm-strategy-skills) can use the base-layer counts as a bottom-up
   universe estimate.
 
 ## Credits

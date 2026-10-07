@@ -10,7 +10,7 @@ description: >
   "signal research", "у нас є список компаній — хто зараз гарячий", "перескануй базу, сигнали
   вигоріли", "which accounts have a live trigger right now", "enrich this list with signals",
   or hands over a company list and asks who to contact first. Requires a base — this skill does
-  NOT build the list (use data-research / account-sourcing / niche-data-finder) and does NOT invent the signal
+  NOT build the list (data-research, niche-data-finder) and does NOT invent the signal
   library (that lives in `resources/signals-catalog.md`). It also does not write outreach copy.
 ---
 

@@ -178,5 +178,5 @@ Keep the rejected list short; it shows the user what was considered and saves th
 
 ## Credits
 
-Idea adapted from lemlist's public `niche-data-finder` skill (github.com/l3mpire/claude-skills);
-rewritten for B2B service companies. Author of this version: Victor Shulga (victorshulga.com).
+Idea adapted from a public outbound-skills collection; rewritten for B2B
+service companies. Author of this version: Victor Shulga (victorshulga.com).

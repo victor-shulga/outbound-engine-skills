@@ -20,15 +20,15 @@ the other next to it.
 |---|---|---|
 | Weak | under 1% | [Practitioner] below this, check deliverability and the list before touching copy |
 | In line with plan | 1-3% | [Practitioner] plan cold email at about 1.5% reply rate in 2026 |
-| Above market average | 3-7% | [Public] average cold-email reply rate 3.43% (Instantly cold email benchmark report, 2025 sending data) |
+| Above market average | 3-7% | [Public] average cold-email reply rate 3.43% (a sending platform's cold-email benchmark report, 2025 data) |
 | Strong | 7-10% | [Practitioner] |
-| Top senders | 10%+ | [Public] "The 1% Cold Email Playsheet", ColdIQ (Michel Lieben) with Instantly |
+| Top senders | 10%+ | [Public] a cold-email playsheet built on a sending platform's data, 2025 |
 
 Reference points on signal-led campaigns, as reported by the source, not independently verified:
 
 | Campaign type | Reported reply rate | Source |
 |---|---|---|
-| Generic cold | 6-8% | [Public] Growth Engine X lessons from 10M+ emails, as collected in ColdIQ's public GTM skills |
+| Generic cold | 6-8% | [Public] an outbound agency's lessons from 10M+ emails |
 | Signal-based | 18-22% | same |
 | Several signals stacked | 35-40% | same |
 
@@ -42,7 +42,7 @@ replies), never as a target for a first campaign.
 | Positive share of all replies | about 20% at most | [Practitioner] |
 | Positive replies ÷ contacts | about 0.3% (1.5% × 20%) | [Practitioner] planning value |
 | Volume check | about 6,700 contacts for 20 positive replies | [Practitioner] derived from the two lines above |
-| Agency target on tight lists | positive reply rate 5-8%, meeting book rate 2-4% | [Public] ColdIQ cold email playbook (250K+ emails); denominator not stated, treat as best-case |
+| Agency target on tight lists | positive reply rate 5-8%, meeting book rate 2-4% | [Public] a published cold-email playbook (250K+ emails); denominator not stated, treat as best-case |
 
 Verdict guide [Practitioner]: under 0.15% of contacts (half the plan) = weak; 0.2-0.5% = normal;
 1%+ = strong. If replies are fine and positives are low, the offer or the ICP is off, not the copy.
@@ -51,9 +51,9 @@ Verdict guide [Practitioner]: under 0.15% of contacts (half the plan) = weak; 0.
 
 | Band | Range | Basis |
 |---|---|---|
-| Healthy | under 2% | [Public] ColdIQ × Instantly playsheet; ColdIQ public GTM skills (infrastructure module) |
-| Warning | 2-5% | [Public] ColdIQ public GTM skills |
-| Pause and clean | over 5% | [Public] ColdIQ public GTM skills |
+| Healthy | under 2% | [Public] cold-email playsheet (sending-platform data, 2025); a public email-infrastructure guide |
+| Warning | 2-5% | [Public] a public email-infrastructure guide |
+| Pause and clean | over 5% | [Public] a public email-infrastructure guide |
 
 ### Spam complaints
 
@@ -69,22 +69,22 @@ Verdict guide [Practitioner]: under 0.15% of contacts (half the plan) = weak; 0.
 - Open tracking adds a tracking link and pixel; many senders switch it off for placement. With
   tracking off, 0 opens means nothing.
 - If tracking is on and you must read it: 40-60% is normal, under 30% points at inbox placement.
-  [Public] Growth Engine X lessons, as collected in ColdIQ's public GTM skills.
+  [Public] an outbound agency's lessons from 10M+ emails.
 
 ### Sequence facts
 
 | Fact | Basis |
 |---|---|
-| About 42% of replies come from follow-ups, not the first email | [Public] ColdIQ × Instantly playsheet |
-| A step 2 written as a short reply in the same thread beats a formal second email by about 30% | [Public] ColdIQ × Instantly playsheet |
-| Best and worst copy variants differ by up to 13x in replies | [Public] ColdIQ cold email playbook (250K+ emails) |
-| Micro-lists of 500-1,000 contacts with a reason to reply beat large blasts | [Public] ColdIQ × Instantly playsheet |
+| About 42% of replies come from follow-ups, not the first email | [Public] cold-email playsheet (sending-platform data, 2025) |
+| A step 2 written as a short reply in the same thread beats a formal second email by about 30% | [Public] cold-email playsheet (sending-platform data, 2025) |
+| Best and worst copy variants differ by up to 13x in replies | [Public] a published cold-email playbook (250K+ emails) |
+| Micro-lists of 500-1,000 contacts with a reason to reply beat large blasts | [Public] cold-email playsheet (sending-platform data, 2025) |
 
 ### Seasonal dips (do not misread as a broken campaign)
 
 | Period | Typical engagement drop | Basis |
 |---|---|---|
-| December holidays | 20-30%, recovers mid-January | [Public] ColdIQ public GTM skills (infrastructure module) |
+| December holidays | 20-30%, recovers mid-January | [Public] a public email-infrastructure guide |
 | July-August | 10-20% | same |
 | Week of the sector's main conference | 15-25% | same |
 
@@ -92,10 +92,10 @@ Verdict guide [Practitioner]: under 0.15% of contacts (half the plan) = weak; 0.
 
 | Fact | Basis |
 |---|---|
-| Warm up new mailboxes at 5-10 emails a day for 4-6 weeks | [Public] ColdIQ × Instantly playsheet |
-| 2-3 weeks of warm-up minimum before campaigns | [Public] ColdIQ public GTM skills (infrastructure module) |
+| Warm up new mailboxes at 5-10 emails a day for 4-6 weeks | [Public] cold-email playsheet (sending-platform data, 2025) |
+| 2-3 weeks of warm-up minimum before campaigns | [Public] a public email-infrastructure guide |
 | Plan the first send at setup day + 3 weeks; the work is about 2 hours, the rest is calendar | [Practitioner] |
-| Red flag: around 100 emails an hour from one domain | [Public] ColdIQ × Instantly playsheet |
+| Red flag: around 100 emails an hour from one domain | [Public] cold-email playsheet (sending-platform data, 2025) |
 
 ---
 
@@ -137,9 +137,9 @@ low reply = rewrite shorter and end on a question.
   together. [Practitioner]
 - Compare the multichannel cohort with an email-only or LinkedIn-only cohort from the same list and
   period, or the comparison says nothing. [Practitioner]
-- For small markets (under about 20,000 people in the TAM) one Growth Engine X lesson is to work one
+- For small markets (under about 20,000 people in the TAM) one outbound-agency lesson is to work one
   channel at a time across the whole list rather than build tightly threaded day-by-day sequences.
-  [Public] Growth Engine X lessons, as collected in ColdIQ's public GTM skills.
+  [Public] an outbound agency's lessons from 10M+ emails.
 
 ---
 
@@ -166,7 +166,7 @@ low reply = rewrite shorter and end on a question.
 
 | Finding | Basis |
 |---|---|
-| Referrals plus direct human contact bring close to two thirds of new business in professional services | [Public] Hinge Research Institute, High Growth Study 2026 (495 firms) |
+| Referrals plus direct human contact bring close to two thirds of new business in professional services | [Public] a professional-services growth study, 2026 (495 firms) |
 | Referred customers were at least 16% more valuable and stayed longer | [Public] Schmitt, Skiera and Van den Bulte, Journal of Marketing, 2011 (about 10,000 bank customers over 3 years) |
 
 Use these when a client asks whether to keep pouring volume into cold channels: the cost of a cold

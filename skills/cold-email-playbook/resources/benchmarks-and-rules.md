@@ -2,11 +2,11 @@
 
 Every number below names where it came from. Four source groups are used:
 
-- **ColdIQ playbook**: ColdIQ's cold email playbook, built on 250K+ emails sent and 73 prospect calls,
-  published in ColdIQ's public GTM skills.
-- **GEX lessons**: 25 lessons from Growth Engine X, an agency sending 1.5-2M emails a month for 40-50
-  clients (10M+ emails in total), as collected in ColdIQ's public GTM skills.
-- **Playsheet**: "The 1% Cold Email Playsheet" by ColdIQ (Michel Lieben) with Instantly.
+- **Playbook**: a published cold-email playbook from an outbound agency, built on 250K+ emails sent
+  and 73 prospect calls.
+- **10M lessons**: 25 lessons from an outbound agency sending 1.5-2M emails a month for 40-50
+  clients (10M+ emails in total).
+- **Playsheet**: a cold-email playsheet built on a sending platform's data (2025).
 - **[Practitioner]**: Victor Shulga's operating rules for B2B service companies. Rules of thumb, not
   data.
 
@@ -19,17 +19,17 @@ conservative numbers and treat the agency figures as a ceiling.
 
 | Metric | Figure | Source |
 |---|---|---|
-| Average cold-email reply rate | 3.43% | Playsheet (Instantly sending data) |
+| Average cold-email reply rate | 3.43% | Playsheet (sending-platform data) |
 | Top senders' reply rate | 10%+ | Playsheet |
 | Planning reply rate for 2026 | about 1.5% | [Practitioner] |
 | Positive replies as share of all replies | at most about 20% | [Practitioner] |
-| Positive reply rate, tight lists | 5-8% | ColdIQ playbook (target, denominator not stated) |
-| Meeting book rate | 2-4% | ColdIQ playbook (target) |
-| Open rate, when tracked | 40-60% is healthy; under 30% points to placement | GEX lessons |
-| Reply rate, generic cold vs signal-based vs several signals | 6-8% vs 18-22% vs 35-40% | GEX lessons (their programmes) |
+| Positive reply rate, tight lists | 5-8% | Playbook (target, denominator not stated) |
+| Meeting book rate | 2-4% | Playbook (target) |
+| Open rate, when tracked | 40-60% is healthy; under 30% points to placement | 10M lessons |
+| Reply rate, generic cold vs signal-based vs several signals | 6-8% vs 18-22% vs 35-40% | 10M lessons (their programmes) |
 | Share of replies that come from follow-ups | about 42% | Playsheet |
-| Gap between best and worst copy variant | up to 13x | ColdIQ playbook |
-| Bounce rate | under 2% healthy, over 5% pause | Playsheet; ColdIQ infrastructure module |
+| Gap between best and worst copy variant | up to 13x | Playbook |
+| Bounce rate | under 2% healthy, over 5% pause | Playsheet; infrastructure guide |
 | Spam complaint rate | under 0.1%, never 0.3% | Google email sender guidelines |
 | Call → paid client | at least 15% | [Practitioner] |
 
@@ -39,7 +39,7 @@ is the domains and warm-up, the proof assets and the person handling replies; se
 
 A segment or hypothesis that reached fewer than 300 contacts is **not tested** [Practitioner].
 
-## 2. Writing rules (ColdIQ playbook unless marked)
+## 2. Writing rules (Playbook unless marked)
 
 - Write for the 97% who will not reply: short, easy to skim, nothing to decode.
 - About 60-90 words for the first email; the playbook found 70-90 the sweet spot.
@@ -53,10 +53,10 @@ A segment or hypothesis that reached fewer than 300 contacts is **not tested** [
 - Before using a signal, run the "so what" test: is it recent, does it connect to the offer, would
   they care?
 
-## 3. Sequence rules (GEX lessons unless marked)
+## 3. Sequence rules (10M lessons unless marked)
 
 - Two or three emails. The first email does most of the work; each extra step adds less and raises
-  complaint risk. The ColdIQ playbook also found two-step sequences strongest.
+  complaint risk. The Playbook also found two-step sequences strongest.
 - Three to five days between emails; one day is too short.
 - Change the value angle between emails (cost, revenue, time) instead of repeating the first email.
 - The last email lowers the ask or asks for the right person; no guilt-trip breakups.
@@ -67,11 +67,11 @@ A segment or hypothesis that reached fewer than 300 contacts is **not tested** [
   then phone, then LinkedIn, then mail for the rest) instead of tightly threaded multi-channel
   timing.
 - Recent triggers: a job change still works but is widely used; social signals (the prospect posting or
-  engaging on a topic) outperformed the "logical" triggers in GEX's tests.
+  engaging on a topic) outperformed the "logical" triggers in the 10M lessons' tests.
 
 ## 4. TAM reuse
 
-People forget an email within minutes, and their priorities shift within a quarter. GEX's rule: plan to
+People forget an email within minutes, and their priorities shift within a quarter. The 10M lessons' rule: plan to
 work through the whole addressable list every three months and then start again with new copy.
 
 ```
@@ -102,10 +102,10 @@ Example for a B2B service company selling engineering capacity: (1) hiring for t
 replaces, (2) won new work recently (tender award, permit, new client announcement), (3) team growth in
 the last six months. Accounts with all three go first.
 
-GEX built this with a spreadsheet-style enrichment tool; any tool that supports conditional steps
+The agency built this with a spreadsheet-style enrichment tool; any tool that supports conditional steps
 works.
 
-## 6. Seasonal dips (ColdIQ infrastructure module)
+## 6. Seasonal dips (infrastructure guide)
 
 | Period | Typical drop |
 |---|---|

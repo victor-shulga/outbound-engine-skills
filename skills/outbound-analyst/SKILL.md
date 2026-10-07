@@ -80,7 +80,7 @@ one sentence on what it means. Opens, if mentioned, go last with the reliability
 
 ```
 Reply rate: 2.1% (21 of 1,000 delivered) · In line with plan [Practitioner: plan ~1.5%]
-            · below the 3.43% public average [Public: Instantly benchmark report]
+            · below the 3.43% public average [Public: a sending platform's benchmark report, 2025]
 Verdict: normal for cold email in 2026; not the bottleneck.
 ```
 
@@ -147,7 +147,7 @@ If installed (pack outbound-engine-skills):
 
 ## Credits
 
-The idea of an instant-verdict outbound analyst comes from lemlist's public `outbound-analyst` skill
-(github.com/l3mpire/claude-skills). This version is rewritten from scratch for B2B service companies
-and does not use lemlist's dataset; every benchmark number carries its own source in
+The idea of an instant-verdict outbound analyst comes from a public outbound-skills collection.
+This version is rewritten from scratch for B2B service companies and does not use that collection's
+dataset; every benchmark number carries its own source in
 `references/benchmarks.md`. Author of this version: Victor Shulga (victorshulga.com).

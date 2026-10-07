@@ -178,6 +178,6 @@ data-point, segment insight) is not a campaign. A single reply that needs an ans
 
 ## Credits
 
-Merged and rewritten from two lemlist public skills, campaign-angle-finder and
-linkedin-outbound-angle (github.com/l3mpire/claude-skills). Author of this version: Victor Shulga
+Merged and rewritten from two skills in a public outbound-skills collection (a campaign-angle
+finder and a LinkedIn-angle skill). Author of this version: Victor Shulga
 (victorshulga.com).

@@ -4,8 +4,8 @@ How to build cold-email sending capacity from nothing, keep it healthy, and repa
 breaks. Platform-neutral: the steps apply to any sequencer that connects Google Workspace or
 Microsoft 365 mailboxes. Prices and admin-console paths change; check them at setup time.
 
-Sources: the sizing method, provider split, ramp and recovery steps are condensed from ColdIQ's
-public GTM skills (infrastructure module by ColdIQ and Ivan Falco). Lines marked [Practitioner] come
+Sources: the sizing method, provider split, ramp and recovery steps are condensed from a public
+email-infrastructure guide in a cold-outreach playbook collection. Lines marked [Practitioner] come
 from Victor Shulga's own deliverability work. Google sender rules are from Google's published email
 sender guidelines.
 
@@ -54,7 +54,7 @@ Worked examples (careful rate, 20 per mailbox per day):
 - 20,000 a month: 1,000 a day, 50 mailboxes, 75 with buffer, 38 domains.
 
 Per-mailbox daily limits once fully ramped: Google Workspace about 15-25, Microsoft 365 about
-10-15. ColdIQ's guide treats roughly 15 mailboxes as the practical floor for a programme that can
+10-15. The infrastructure guide treats roughly 15 mailboxes as the practical floor for a programme that can
 absorb a burned domain without stopping.
 
 Provider mix: about 60% Google Workspace and 40% Microsoft 365. Two providers spread the risk, and
@@ -144,7 +144,7 @@ for 8/10 or better), Google Postmaster Tools and Microsoft SNDS (reputation once
 
 ## 8. Warm-up
 
-- Minimum two weeks, three recommended (ColdIQ). The ColdIQ and Instantly playsheet goes further:
+- Minimum two weeks, three recommended (infrastructure guide). The sending-platform playsheet goes further:
   5-10 emails a day for 4-6 weeks. Plan on three weeks unless the domains are brand new and the
   stakes are high.
 - Typical starting settings for a new mailbox: 10-15 warm-up emails a day with daily increase on,
@@ -157,7 +157,7 @@ for 8/10 or better), Google Postmaster Tools and Microsoft SNDS (reputation once
 
 ## 9. Going live
 
-Per-mailbox daily ramp (ColdIQ):
+Per-mailbox daily ramp (infrastructure guide):
 - Week 1: Google 10-15, Microsoft 5-10.
 - Weeks 2-3: Google 15-20, Microsoft 10-12.
 - Week 4 onward: Google 20-25, Microsoft 12-15.

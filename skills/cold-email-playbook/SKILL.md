@@ -91,9 +91,8 @@ If installed (pack outbound-engine-skills unless noted):
 
 ## Credits
 
-Modules condensed and rewritten from ColdIQ's public GTM skills
-(github.com/sachacoldiq/ColdIQ-s-GTM-Skills), including the infrastructure module by ColdIQ and Ivan
-Falco and the Growth Engine X lessons collected there; framework names credited to their creators.
-Further figures from "The 1% Cold Email Playsheet" (ColdIQ with Instantly) and Google's email sender
-guidelines. Router, practitioner rules and re-engagement templates: Victor Shulga
+Modules condensed and rewritten from a public cold-outreach playbook collection, including its
+email-infrastructure guide and an outbound agency's lessons from 10M+ emails; framework names credited
+to their creators. Further figures from a cold-email playsheet built on a sending platform's data
+(2025) and Google's email sender guidelines. Router, practitioner rules and re-engagement templates: Victor Shulga
 (victorshulga.com).

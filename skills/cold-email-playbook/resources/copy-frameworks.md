@@ -11,7 +11,7 @@ Two rules apply on top of every framework below:
 - **Proof**: any number, client name or result must be real and checkable. Placeholders stay
   placeholders until the user supplies the fact.
 
-The collection was assembled in ColdIQ's public GTM skills; the attributions below follow it.
+The collection was assembled in a public cold-outreach playbook; the attributions below follow it.
 
 ---
 
@@ -143,7 +143,7 @@ The collection was assembled in ColdIQ's public GTM skills; the attributions bel
 
 ## Building blocks that fit any framework
 
-**First-line types** (from ColdIQ's playbook, 250K+ emails):
+**First-line types** (from a published cold-email playbook, 250K+ emails):
 - *Observation*: something you noticed about them, stated without a reason. Works for general
   triggers because it leaves them curious.
 - *Pain*: link a specific trigger to the problem it implies (hiring for a role → the gap that role is
@@ -159,7 +159,7 @@ the first line is the preview.
 - *Peer proof*: observation → what companies like them are doing → the result they get.
 - *Specific outcome*: observation → one concrete outcome you produced → would it apply to them.
 
-**Three-email arc** (Growth Engine X lessons, as collected by ColdIQ):
+**Three-email arc** (an outbound agency's lessons from 10M+ emails):
 1. Why them, why now; the offer in a sentence; proof that others already use it; interest question.
 2. Same thread, the context that did not fit in email 1.
 3. Lower the ask: a resource, a short custom video or audit, a routing question.

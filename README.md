@@ -1,6 +1,6 @@
 # outbound-engine
 
-Full outbound execution engine for B2B service companies: 28 skills covering ICP and personas, signal sourcing, prospect-list research, enrichment, hypotheses, sequence copy, personalization, deliverability, reply handling, A/B testing and reporting.
+Full outbound execution engine for B2B service companies: 34 skills covering ICP and personas, signal sourcing, prospect-list research, enrichment, hypotheses, sequence copy, personalization, deliverability, reply handling, A/B testing and reporting.
 
 Part of the GTM-system methodology by [Victor Shulga](https://victorshulga.com) (Fractional CRO).
 
@@ -52,6 +52,8 @@ Skill names carry no prefixes — no numbers, and no `outbound-` on skills that 
 - `lead-scoring` — the post-contact half: starts from that profile, adds what only a conversation reveals
 - `hypothesis-builder` — ICP × signal × offer into a testing matrix
 - `campaign-naming` — the convention has to exist before the campaigns do
+- `niche-data-finder` — where accounts in a niche are listed with a signal (registries, tenders, permits, directories, job boards): 3–5 sources scored on freshness, coverage, signal and extraction cost
+- `prospect-list-run` — a raw company list handed over by a client → scored base with live signals, campaigns split by queue × persona × tier, copy columns filled, four docs written (ships Python scripts)
 
 Scoring is deliberately two skills. Mixing what you can read about a company with what someone told you on a call produces one number that answers neither question — and quietly ranks strangers above people who replied.
 
@@ -61,6 +63,9 @@ Scoring is deliberately two skills. Mixing what you can read about a company wit
 - `subject-line-generator` · `ps-line-generator`
 - `linkedin-sequence` — the LinkedIn side of the same hypothesis
 - `followup-sequence` — non-responders and re-engagement of a burnt base
+- `angle-finder` — from which side to enter, before any copy: 3 angles for a persona, or one angle with hooks for one LinkedIn profile
+- `cta-interest-based` — the CTA rule for every outbound message: interest only, never a call or a time slot; the approved bank and the banned list
+- `cold-email-playbook` — sending infrastructure from zero, 13 named copy frameworks, benchmarks and rules, re-engagement of dead and closed-lost leads
 - `multi-channel-orchestrator` — the touch grid, set before the copy, because spacing changes what each message can say
 
 **Launch and read**
@@ -71,6 +76,7 @@ Scoring is deliberately two skills. Mixing what you can read about a company wit
 - `reply-audit` — the batch view: many replies down to root cause — targeting, message, or pitch
 - `ab-test-analyzer` · `campaign-tiering`
 - `campaign-report` · `weekly-outreach-report`
+- `outbound-analyst` — a verdict on any outbound number (accept, reply, positive reply, meeting rate, bounce) against sourced benchmarks, with the root cause and the fix
 
 The two reply skills are a pair: the handler is the surgeon on one thread, the audit is the epidemiologist over the batch. Audit findings become rules the handler applies; replies the handler writes get tagged so the next audit can aggregate them.
 
@@ -89,6 +95,8 @@ The two reply skills are a pair: the handler is the surgeon on one thread, the a
 Skills degrade gracefully: without MCP connections they work from pasted data (CSV, sheets, text).
 
 ## Changelog
+
+**0.8.0** — six skills added (34): `niche-data-finder`, `prospect-list-run`, `angle-finder`, `cta-interest-based`, `cold-email-playbook`, `outbound-analyst`. Client tasks and other public skills already pointed at them; now they install. `niche-data-finder`, `outbound-analyst` and the `cold-email-playbook` resources are written fresh, with the borrowed ideas and every benchmark credited to its source inside the skill. References to retired skill names (`copy-generation`, `signal-detection`, `list-building`) now point to `sequence-writer`, `signal-research`, `data-research`.
 
 **0.7.0** — `pre-launch-data-check` added: the last stop-filter before upload. The path had gates for fit, volume, proof and verified addresses, but nothing looked at the final file as it gets sent, so a current client, an unrendered `{{first_line}}` or a 30% catch-all batch could still go out. The check runs seven layers over the rows and returns GO / GO WITH FIXES / STOP with a rows-to-fix file; `signal-outbound` now has ten steps and a G8 gate.
 

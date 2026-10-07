@@ -69,7 +69,7 @@ happened*, and *does your service solve that exact problem*. "Roughly" means the
 Type A carries an expiry window (24h for a post, 30–90 days for a round). Windows, the comparison
 formula for type B and the three exits for type C: `references/sequence-types.md`.
 
-If the angle is not obvious from the anchor, run `angle-finder` first and come back with one angle.
+If the angle is not obvious from the anchor, run `angle-finder` (this pack) first and come back with one angle.
 
 ## Step 2 — Size the campaign and choose the channel mix
 

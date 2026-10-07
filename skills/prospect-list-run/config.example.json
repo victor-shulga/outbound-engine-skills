@@ -1,0 +1,179 @@
+{
+  "_comment": "EXAMPLE CONFIG. Fictional client: a nearshore QA and test-automation team that sells to small software agencies and product studios. Copy this file, rename it for your client and edit every block. Regexes are Python syntax, matched case-insensitively. Paths are relative to this file.",
+
+  "client": "Example QA Partners",
+  "source_csv": "examples/source.example.csv",
+  "source_track": "example list: software agencies, EU + UK",
+  "run_date": null,
+  "language": "English",
+
+  "columns": {
+    "company": "Company Name",
+    "website": "Website",
+    "country": "Country",
+    "company_linkedin": "Company LinkedIn",
+    "contact_name": "Contact Name",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "title": "Title",
+    "person_linkedin": "Person LinkedIn",
+    "email": "Email",
+    "extra": {
+      "capacity": "In-house QA count",
+      "segment_tag": "Segment"
+    }
+  },
+  "capacity_column": "capacity",
+  "capacity_unit": ["QA engineer", "QA engineers"],
+
+  "personas": {
+    "dm_rx": "\\b(founder|co-?founder|owner|co-?owner|ceo|managing director|managing partner|president|general director|company director|executive director|director)\\b",
+    "champion_rx": "\\b(cto|vp engineering|head of (engineering|delivery|qa|quality)|engineering manager|delivery manager|director of (engineering|delivery|operations)|coo)\\b",
+    "out_of_matrix_rx": "\\b(assistant|^pa\\b|executive assistant|coordinator|intern)\\b"
+  },
+
+  "geo": {
+    "points": {"UK": 10, "Germany": 10, "Netherlands": 10, "Ireland": 10, "Denmark": 10, "Sweden": 10, "Norway": 10, "Finland": 10, "France": 8, "Belgium": 8, "Austria": 8, "Switzerland": 8, "Poland": 6, "USA": 8, "Canada": 5, "Australia": 5},
+    "default_points": 2,
+    "buckets": {"focus": ["UK", "Germany", "Netherlands", "Ireland", "Denmark", "Sweden", "Norway", "Finland"], "second": ["USA", "France", "Belgium", "Austria", "Switzerland"]}
+  },
+
+  "site": {
+    "glob_paths": ["service", "services", "what-we-do", "expertise", "capabilit", "solutions", "development", "mobile", "web", "work", "portfolio", "projects", "case", "clients", "about", "team", "people", "support", "maintenance", "pricing", "careers", "jobs", "vacanc", "partners"],
+    "patterns": {
+      "builds_software": "\\b(web (app|application) development|mobile app development|custom software|software development|bespoke software|app development)\\b",
+      "product_studio": "\\b(product studio|mvp|saas (development|product)|digital product)\\b",
+      "mobile": "\\b(ios|android|react native|flutter)\\b",
+      "qa_mention": "\\b(qa|quality assurance|software testing|test automation|manual testing)\\b",
+      "qa_strong": "\\b((qa|testing) (services|department|team)|test automation (services|framework)|dedicated (qa|testers?))\\b",
+      "automation_tools": "\\b(cypress|playwright|selenium|appium|jest)\\b",
+      "maintenance": "\\b(maintenance|support (plan|package|retainer)|ongoing support|retainer|sla)\\b",
+      "subcontract_lang": "\\b(white[- ]label|staff augmentation|outsourcing partner|team extension|nearshore|offshore)\\b",
+      "marketing": "\\b(marketing agency|branding|social media|content marketing|ppc|seo services)\\b",
+      "design": "\\b(ux|ui|user experience|product design)\\b",
+      "hiring": "\\b(we(\\'re| are) hiring|current vacanc|open position|careers?)\\b"
+    },
+    "own_stack_cms": null
+  },
+
+  "hooks": {
+    "service_url_rx": "testing|quality-assurance|\\bqa\\b|test-automation",
+    "claim_rx": "[^.!?]{0,140}\\b(quality assurance|testing|test automation|qa)\\b[^.!?]{0,140}[.!?]",
+    "service_name": "QA and testing",
+    "city_rx": "\\b(London|Manchester|Bristol|Edinburgh|Dublin|Amsterdam|Rotterdam|Berlin|Hamburg|Munich|Copenhagen|Stockholm|Oslo|Helsinki)\\b",
+    "sectors_rx": "\\b(healthcare|fintech|financial services|legal|education|e-?commerce|retail|logistics|travel|energy|insurance|b2b saas|saas|media)\\b"
+  },
+
+  "signals": {
+    "points": {"S01": 15, "S04": 10, "S06": 10, "S16": 8},
+    "human": {
+      "S01": "open vacancy for a QA or test-automation engineer",
+      "S04": "looking for a testing or QA partner",
+      "S06": "hiring developers or a PM, but no QA role",
+      "S16": "open vacancy on the team"
+    },
+    "window_days": {"S01": 30, "S04": 365, "S06": 45, "S16": 90},
+    "queue": {"S01": "event", "S04": "weak-signal", "S06": "weak-signal", "S16": "weak-signal"},
+    "priority": ["S01", "S04", "S06", "S16"],
+    "detect": {
+      "paths": ["/careers", "/careers/", "/jobs", "/jobs/", "/vacancies", "/join-us", "/join", "/work-with-us", "/about/careers", "/company/careers", "/hiring", "/partners", "/partner", "/partnerships"],
+      "hiring_url_rx": "career|job|vacanc|hiring|join-us|recruit",
+      "partner_url_rx": "partner|white-label",
+      "target_role": {"code": "S01", "rx": "\\b(qa engineer|quality assurance engineer|test engineer|software tester|qa tester|test automation engineer|sdet|qa analyst)\\b"},
+      "adjacent_role": {"code": "S06", "rx": "\\b(developer|software engineer|project manager|product manager|delivery manager)\\b", "requires_capacity_max": 0},
+      "any_hiring": {"code": "S16"},
+      "partner_seek": {"code": "S04", "rx": "\\b(looking for (?:a )?(?:testing|qa|quality assurance) partner|seeking (?:a )?(?:testing|qa) partner|we outsource (?:our )?(?:testing|qa))\\b"},
+      "partner_offer_anti": {"code": "X07", "rx": "\\b(white[- ]label (?:qa|testing|development)|(?:qa|testing) outsourcing services|(?:become|join) (?:a |our )?partner programme?|staff augmentation services)\\b"}
+    }
+  },
+
+  "rubric": {
+    "category_max": {"1": 15, "2": 10, "3": 10, "4": 15, "5": 15, "6": 10, "7": 15, "8": 10},
+    "category_names": {"1": "company type", "2": "size", "3": "geo", "4": "deal value", "5": "service fit", "6": "rhythm", "7": "signal", "8": "decision maker"},
+    "bands": {"Hot": 80, "Warm": 60, "Nurture": 40},
+    "gate": {"stack_min": 10, "geo_min": 5, "dm_min": 6},
+    "company_type": {
+      "gap_when": {"capacity_known": false, "has_site": false},
+      "rules": [
+        {"capacity_max": 0, "flags_any": ["builds_software"], "points": 15},
+        {"capacity_max": 0, "points": 5},
+        {"capacity_min": 1, "capacity_max": 2, "points": 10},
+        {"capacity_min": 3, "capacity_max": 3, "points": 6},
+        {"capacity_min": 4, "points": 0},
+        {"flags_any": ["builds_software"], "points": 8}
+      ]
+    },
+    "size_bands": [[11, 50, 10], [1, 10, 7], [51, 200, 5]],
+    "size_default": 2,
+    "acv": {"column": null, "bands": []},
+    "service_fit": {
+      "gap_when": {"has_site": false},
+      "rules": [
+        {"flags_all": ["builds_software", "automation_tools"], "points": 15},
+        {"flags_all": ["builds_software", "mobile"], "points": 13},
+        {"flags_any": ["builds_software"], "points": 12},
+        {"flags_any": ["product_studio"], "points": 10},
+        {"flags_any": ["qa_mention"], "points": 5}
+      ]
+    },
+    "rhythm": {
+      "gap_when": {"has_site": false},
+      "rules": [
+        {"flags_any": ["maintenance"], "volume_min": 50, "points": 10},
+        {"flags_any": ["maintenance"], "points": 6},
+        {"volume_min": 50, "points": 6},
+        {"volume_min": 1, "points": 2},
+        {"gap": true, "points": 0}
+      ]
+    },
+    "stop_filters": [
+      {"reason": "SF1: 4+ in-house QA engineers, they already have the team", "capacity_min": 4},
+      {"reason": "SF2: sells QA or staff augmentation itself (competitor)", "has_site": true, "flags_all": ["subcontract_lang", "qa_strong"]},
+      {"reason": "SF3: marketing-only agency, builds no software", "has_site": true, "flags_any": ["marketing"], "flags_none": ["builds_software", "product_studio"]}
+    ],
+    "tiers": [
+      {"tier": "A", "geo_in": ["UK", "Germany", "Netherlands", "Ireland", "Denmark", "Sweden", "Norway", "Finland"], "size_min": 11, "size_max": 50, "flags_any": ["maintenance"]},
+      {"tier": "A-", "geo_in": ["UK", "Germany", "Netherlands", "Ireland", "Denmark", "Sweden", "Norway", "Finland"], "size_min": 11, "size_max": 50},
+      {"tier": "B", "size_max": 10},
+      {"tier": "B", "geo_in": ["USA", "France", "Belgium", "Austria", "Switzerland"]},
+      {"tier": "C", "size_min": 51}
+    ],
+    "tier_default": "C"
+  },
+
+  "text": {
+    "angle": {
+      "event": "hiring a QA engineer: a ready QA team instead of one hire",
+      "weak-signal": "the team is growing and testing stays the bottleneck",
+      "datapoint": "fixed-scope test automation instead of developers testing their own code"
+    },
+    "opener": {"event": "event", "weak-signal": "event", "datapoint": "data point"},
+    "observation": {
+      "S01": "You have an open {role} role on your careers page.",
+      "S01_norole": "You are hiring for QA on your careers page.",
+      "S06": "You are hiring {a_role} right now, and there is no QA role on the list with {capacity_phrase} on staff.",
+      "S16": "You are hiring {a_role} at the moment.",
+      "S16_norole": "You have an open role on your careers page.",
+      "S04": "Your site says you are looking for a testing partner.",
+      "default_signal": "Noticed on your site: {signal}.",
+      "service_page_zero_capacity": "You list {service} as a service ({url}), with no in-house QA engineer in {team}.",
+      "service_page": "You have a dedicated {service} page ({url}) with {capacity_phrase} on staff.",
+      "claim": "On your site: \"{claim}\"",
+      "positioning_sectors": "Your site says \"{positioning}\", and you work with {sectors} clients.",
+      "positioning": "From your homepage: \"{positioning}\"",
+      "sectors": "You build for {sectors} clients, and testing sits with {capacity_phrase} in {team}.",
+      "own_stack": "Your own site runs on {cms}{builder_phrase}, with {capacity_phrase} in {team}."
+    },
+    "guess": [
+      {"capacity_max": 0, "text": "My guess is that developers test their own code{volume_phrase}, so bugs surface after release and eat into the next sprint."},
+      {"capacity_min": 1, "capacity_max": 2, "text": "My guess is that {capacity_phrase} carry the whole release flow{volume_phrase}, so at peak either the release date moves or testing gets cut."},
+      {"capacity_min": 3, "capacity_max": 3, "text": "My guess is that with three people on QA, when two releases land in the same week it is regression testing that gives way."},
+      {"text": "My guess is that testing load is uneven and peaks get covered in a hurry."}
+    ],
+    "question": {
+      "event": "Would you consider a QA team on contract instead of one hire, or is the role a settled decision?",
+      "champion": "How do you split testing when two releases land in the same week?",
+      "DM": "How do you cover testing when the release load is bigger than the team?"
+    }
+  }
+}

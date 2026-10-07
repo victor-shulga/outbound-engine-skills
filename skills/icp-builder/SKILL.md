@@ -67,7 +67,7 @@ Last updated: [date]
 
 ## Notes
 
-- This file is the input to icp-validation, signal-detection, hypothesis-builder, and copy-generation
+- This file is the input to icp-validation, signal-research, hypothesis-builder, and sequence-writer
 - Revisit after every 20 closed deals — ICPs drift
 - Negative ICP criteria are as important as positive ones — include them
 - If call recordings are available, extract language the prospect used and include it verbatim under situational fit

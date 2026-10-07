@@ -10,7 +10,7 @@ description: >
   "signal research", "у нас є список компаній — хто зараз гарячий", "перескануй базу, сигнали
   вигоріли", "which accounts have a live trigger right now", "enrich this list with signals",
   or hands over a company list and asks who to contact first. Requires a base — this skill does
-  NOT build the list (use list-building / niche-data-finder) and does NOT invent the signal
+  NOT build the list (use data-research / account-sourcing / niche-data-finder) and does NOT invent the signal
   library (that lives in `resources/signals-catalog.md`). It also does not write outreach copy.
 ---
 
@@ -211,10 +211,10 @@ readable page — a database dump with a link to a kanban is not a report.
 
 | Next question | Skill |
 |---|---|
-| Which signal × ICP × offer should we even test | `hypo-generator` / `06-hypothesis-builder` |
+| Which signal × ICP × offer should we even test | `hypo-generator` (gtm-skills) / `hypothesis-builder` |
 | Which tool detects signal X, what does it cost, when does it decay | `agency-signal-sourcer` |
-| Base is too small / where do I find more accounts | `niche-data-finder`, `list-building` |
-| Turn scored accounts into a full prospect list with contacts and copy slots | client prospect-list flow |
+| Base is too small / where do I find more accounts | `niche-data-finder`, `data-research`, `account-sourcing` |
+| Turn scored accounts into a full prospect list with contacts and copy slots | `prospect-list-run` |
 | Write the sequence off these signals | `sequence-writer` |
 | Per-account pre-touch briefing | `prospect-profiler` |
 

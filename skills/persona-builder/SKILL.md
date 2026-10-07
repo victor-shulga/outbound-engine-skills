@@ -54,7 +54,7 @@ EXAMPLE OPENER
 
 ## Notes
 
-- Build one persona file per role — reuse across all copy-generation calls
+- Build one persona file per role — reuse across all sequence-writer calls
 - Language should come from the persona's own vocabulary, not your product vocabulary
 - "What makes them look bad" is the most important field — fear of failure drives more decisions than hope of gain
 - VP Sales and Head of Sales sound similar but often have completely different concerns — profile them separately

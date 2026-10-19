@@ -56,10 +56,17 @@ Last updated: [date]
 - [Signal 1]
 - [Signal 2]
 - [Signal 3]
+Signals RANK accounts, they never filter them: an account that passes the rings and has no signal stays on the list with an empty signal set and a lower priority.
 
-## Negative ICP (disqualifiers)
-- [Company type or situation to skip]
-- [Characteristic that predicts churn or no-close]
+## What you sell (context, not a filter)
+"[One line: the offer and who buys it]" — used only to judge competitors: a company that sells this, or anything in the same category to the same buyer, is a competitor, not a lead.
+
+## Negative ICP — four rings, checked in this order
+1. **Ring 1 · Business model**: [product-only / marketplace / other models that do not buy this]
+2. **Ring 2 · Competitors**: [who sells the same thing, or the same category, to the same buyer]
+3. **Ring 3 · Size and geo**: [headcount floor, e.g. under 11 people; markets you do not serve]
+4. **Ring 4 · Already ours**: existing clients, former clients, partners, your own peers and vendors — pulled from the CRM, never from memory
+Every rejected account carries its ring number and a one-line reason. Rejected accounts are not a reserve to revisit later.
 
 ## One-sentence value for this ICP
 "[What you do] for [who] so they can [outcome]."
@@ -69,5 +76,5 @@ Last updated: [date]
 
 - This file is the input to icp-validation, signal-research, hypothesis-builder, and sequence-writer
 - Revisit after every 20 closed deals — ICPs drift
-- Negative ICP criteria are as important as positive ones — include them
+- Negative ICP criteria are as important as positive ones — include them, ring by ring; ring 4 (already ours) is the one every tool without CRM access misses
 - If call recordings are available, extract language the prospect used and include it verbatim under situational fit

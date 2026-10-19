@@ -34,8 +34,10 @@ Segment: [score] — [one line reason]
 Size: [score] — [one line reason]
 Signal: [score] — [one line reason]
 Role: [score] — [one line reason]
+Why a buyer, not a competitor: [one line — what they sell and to whom, and why that makes them a buyer of your offer]
 
 Recommended action: [Tier 1 / Tier 2 / Skip]
+Skip reason: [ring 1 business model / ring 2 competitor / ring 3 size or geo / ring 4 already ours] — [one line]
 ```
 
 ## Notes

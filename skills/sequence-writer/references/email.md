@@ -167,6 +167,11 @@ permission, do not push the file:
 > Can I send the two-page breakdown of how 12 teams split this?
 > Want the benchmark of what this costs teams your size?
 > Should I send the case study? One page, no pitch.
+> Want the 4-point scorecard to check whether the five hires pay back?
+
+The cheapest asset in this block is a scorecard or checklist of four points:
+half a page, no design, and the reader checks their own numbers against it
+before anyone talks. It is prepared once per sequence like any other asset.
 
 **Block 3 — permission for a teardown.** Built per company, so used only on top
 accounts or after a signal:
@@ -188,6 +193,64 @@ A video is offered, not demanded, and it is 90 seconds, not 30 minutes.
 
 Also: **never name a start date in a cold email.** "We can start Monday" reads as
 pressure and as an empty bench.
+
+---
+
+## Variants per block
+
+The anatomy above is fixed. What varies is the angle each block takes on the
+same anchor. A variant is named, written out in full, and chosen by anchor type,
+persona and step. Not spintax: a sequencer picking a clause at random inside one
+email produces an email nobody wrote, and the reply rate of that email cannot be
+read. Two full variants of email 1 and two of email 2 go into the sequencer as
+step variants per persona and are A/B'd on the sample size in
+`references/benchmarks.md` (500 contacts per variant minimum; 300 reads only as a
+direction).
+
+**The anchor never changes inside a sequence.** Only the angle on it: email 1
+restates it as a cost, email 2 adds a second consequence or reframes the metric,
+email 3 carries the asset, email 4 a peer number. Four emails, one observation.
+
+Every example below uses one anchor: *five SDR openings posted this month*.
+Swap it for yours; the shape stays.
+
+### Anchor / first line
+
+| Variant | Use when | Example |
+|---|---|---|
+| I did… I bet | default for type A and B | Saw the five SDR openings posted on the 3rd. I bet the Q1 pipeline number assumes they start now. |
+| Trigger → cost | type A with a salary, sprint or quarter attached | Five new SDRs is five salaries paid out before the first qualified opportunity shows up. |
+| Their own words | the posting or post states the problem itself | "Own the outbound motion end to end" — that line in the SDR posting usually means nobody owns it today. |
+| Question-first | champion persona, type C | Who runs outbound while the five SDR seats stay empty? |
+
+### Problem / agitate
+
+| Variant | Use when | Example |
+|---|---|---|
+| Cost of time | decision-maker with a quarter or roadmap date | Ramp takes four months; the quarter you hired them for ends in three. |
+| Cost of money | decision-maker who owns the budget, type B | Five ramping SDRs cost about $90k a quarter before the first qualified opportunity. |
+| Risk / no guarantee | after a hiring round | Five hires carry no guarantee: the first one to leave takes a quarter of ramp budget with them. |
+| Status quo "most teams end up…" | type C, segment insight | Most teams that size end up with the founder writing the sequences at midnight. |
+
+### Proof
+
+| Variant | Use when | Example |
+|---|---|---|
+| Peer + number + timeframe | default, the client allows the name | A 40-person SaaS team in the same segment booked 11 qualified opportunities in the first 60 days with an outside squad. |
+| No-logo "teams your size" | NDA, no logo allowed | Teams your size in this segment see the first qualified opportunity in week three when an outside squad takes the first touch. |
+| Single outcome | the number is the whole story | One client cut cost per qualified opportunity from $1,400 to $600 inside a quarter. |
+
+### Email 2 opener (reply in thread)
+
+| Variant | Use when | Example |
+|---|---|---|
+| One thing I missed about <trigger> | default for email 2 | One thing I missed about the five SDR openings: the ramp period lands on the same quarter as the pipeline target. |
+| The real test reframe | decision-maker who watches one dashboard metric | Activity dashboards cannot show whether five new SDRs pay back. The real test is qualified opportunities per rep in month four. |
+| Second consequence | type A, the trigger has more than one cost | Five open SDR seats also means the current reps cover five territories until the seats fill. |
+| Peer number | the proof in email 1 was no-logo | A peer team in the same segment needed 4.5 months to get five new SDRs to quota. |
+
+The follow-up bridge and the cost-restated opener are from a published annotated
+example by Alan Ruchtein.
 
 ---
 
@@ -243,6 +306,18 @@ first four sat in spam, the thread leads nowhere, and the close is the last
 attempt to appear in front of the person. (Nobody has published a controlled
 measurement of same-thread vs new-thread; this is a convention with a plausible
 explanation.)
+
+### Follow-up openers that are removed
+
+just circling back · bumping this · in case it got lost in your inbox · I know
+you're busy / you must get hundreds of emails · could you spare 15 minutes ·
+any thoughts?
+
+Each of these tells the reader the email carries nothing new, so the reply rate
+of the follow-up drops to that of a nudge. Email 2 opens with a bridge that names
+what is new: *One thing I missed about <trigger>:* or the real-test reframe
+(see Variants per block). "Worth seeing how they did it?" reads as a demo ask
+and becomes "Want me to send how they did it?".
 
 ### Compression to the signal window
 

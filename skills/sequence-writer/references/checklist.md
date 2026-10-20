@@ -34,6 +34,8 @@ a caveat.
 - [ ] No links, images or attachments in email 1
 - [ ] Within the word cap: 75 / 50 / 45 / 35 / 25
 - [ ] No spintax and no variable dropped into an empty sentence
+- [ ] Email 2 opens with a bridge that names what is new (one thing I missed / the real test), never a nudge
+- [ ] No banned follow-up opener (circling back, bumping, lost in your inbox, you're busy, 15 minutes, any thoughts)
 
 ## Cadence
 
@@ -58,3 +60,9 @@ a caveat.
 - [ ] The expected range matches the anchor type, not one generic benchmark
 - [ ] The readable-from sample size is stated
 - [ ] The stop rule is stated
+
+## Self-check
+
+- [ ] Two variants for email 1 and email 2 per persona, each a full text, named from the variants table in `email.md`
+- [ ] The same anchor carries both variants; only the angle on it differs
+- [ ] The A/B pair is logged with the sample size it is readable from (`benchmarks.md`)

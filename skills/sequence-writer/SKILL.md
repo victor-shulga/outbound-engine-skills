@@ -106,6 +106,16 @@ is a field computed before the send, never a merge variable.
 Sentence-level craft, subject-line rules, the three P.S. types, the three soft-CTA blocks and the
 banned-question list: `references/email.md`.
 
+**Variability is block-level, named, never spintax.** The anchor stays fixed through the sequence;
+each block takes a named angle on it from the "Variants per block" table in `references/email.md`
+(first line: I did…I bet / trigger→cost / their own words / question-first; problem: time / money /
+no guarantee / status quo; proof: peer+number+timeframe / no-logo / single outcome; email 2 opener:
+one thing I missed / the real test / second consequence / peer number). Pick by anchor type, persona
+and step, write every variant out in full, and ship **two variants of email 1 and two of email 2 per
+persona** as step variants in the sequencer. The pair is read at the sample size in
+`references/benchmarks.md`, not on 50 sends. Email 2 never opens with a nudge; the banned follow-up
+openers are listed under Cadence in `references/email.md`.
+
 ## Step 4 — Write the LinkedIn track
 
 Invite note 120–180 characters (write the note; accept rate stops being the metric). First message
@@ -136,7 +146,8 @@ stop rule. A 1.5% reply rate is normal for a campaign with no anchor; if a signa
 6. **Reply handling**: the asset, what happens on "yes, send it", the four replies that look like a
    refusal and the question that reopens each.
 7. **Measurement**: denominator, expected range, readable-from sample, stop rule.
-8. **Self-check**: the checklist result, plus what to A/B (subject lines, the two candidate first lines).
+8. **Self-check**: the checklist result, plus the A/B pairs: two full variants of email 1 and two of
+   email 2 per persona, named from the variants table, with the sample size the pair is readable from.
 
 Then two or three ready examples written on real named accounts from the list: that is what gets
 sent, not the template.

@@ -39,6 +39,7 @@ A rule is a JSON object; every key in it must hold. First matching rule wins.
 | `geo_in` | country is in the list |
 | `size_min`, `size_max` | headcount (LinkedIn first, site text as fallback) |
 | `points` / `reason` / `tier` / `text` | what the rule returns |
+| `filter` | stop filters only: 1 model · 2 competitor · 3 size/geo · 4 already ours; becomes the prefix of `exclusion_reason`. Keep the rules in this order, the first match wins |
 | `gap: true` | marks the category as "no data" (it leaves the score-100 denominator) |
 
 A category with `gap_when` returns "no data" when that condition holds.

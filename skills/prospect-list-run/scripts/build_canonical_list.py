@@ -44,6 +44,9 @@ GEO_B = cfg['geo'].get('buckets', {})
 P = cfg['personas']
 DM, CHAMP, ASSIST = rx(P['dm_rx']), rx(P['champion_rx']), rx(P.get('out_of_matrix_rx'))
 PRIORITY = {c: i for i, c in enumerate(S.get('priority', []))}
+# Disqualifier filters, checked in this order; exclusion_reason always starts with one of them.
+FILTERS = {1: '1 model', 2: '2 competitor', 3: '3 size/geo', 4: '4 already ours'}
+FILTER_OF = {f['reason']: f.get('filter') for f in cfg['rubric'].get('stop_filters', [])}
 TARGET_CODE = S['detect'].get('target_role', {}).get('code')
 HIRING_CODES = {S['detect'].get(k, {}).get('code') for k in ('target_role', 'adjacent_role', 'any_hiring')} - {None}
 ROLE_RX = re.compile(r'\b((?:junior |senior |mid[- ]?level |lead |principal )?'
@@ -119,6 +122,12 @@ def datapoint(cm, f, hk):
     if f.get('maintenance'):
         return 'maintenance', 'ongoing support sold as a service'
     return '', ''
+
+
+def exclusion(reason):
+    """'N name: reason'. Anti-signals default to filter 1, unmapped reasons to filter 3."""
+    n = FILTER_OF.get(reason) or (1 if reason.startswith('anti-signal') else 3)
+    return f'{FILTERS[n]}: {reason}'
 
 
 def fill(template, **kw):
@@ -198,6 +207,7 @@ for r in scored:
     window = S.get('window_days', {}).get(top['code']) if top else None
     fit = pts[1] + pts[5]
     disq = r['band'] == 'Disqualify'
+    pos = usable_positioning(hk.get('positioning')).rstrip('.')
 
     for c in a['contacts']:
         p_role = persona(c['title'])
@@ -252,8 +262,11 @@ for r in scored:
             # 8. Source control
             'match_method': 'client list + site' + (' + LinkedIn' if sz else ''),
             'channel_route': 'e-mail + LinkedIn' if c['email'] else 'LinkedIn',
-            'exclusion_reason': r['action'] if disq else '',
+            'exclusion_reason': exclusion(r['action']) if disq else '',
             'source_track': cfg.get('source_track', ''),
+            # empty when there is nothing to stand on: never a made-up reason
+            'why_buyer': '' if disq or not (pos or hk.get('sectors')) else
+                         fill(T.get('why_buyer'), positioning=pos, sectors=', '.join(hk.get('sectors') or [])),
             # 9. Website (client-specific)
             'site_status': 'responded' if cm.get('ok') or f.get('pages_n') else ('not checked' if not cm else 'no response'),
             'site_cms': cm.get('cms', ''), 'site_builders': ', '.join(cm.get('builders', [])),

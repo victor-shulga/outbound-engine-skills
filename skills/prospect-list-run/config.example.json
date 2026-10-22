@@ -127,9 +127,9 @@
       ]
     },
     "stop_filters": [
-      {"reason": "SF1: 4+ in-house QA engineers, they already have the team", "capacity_min": 4},
-      {"reason": "SF2: sells QA or staff augmentation itself (competitor)", "has_site": true, "flags_all": ["subcontract_lang", "qa_strong"]},
-      {"reason": "SF3: marketing-only agency, builds no software", "has_site": true, "flags_any": ["marketing"], "flags_none": ["builds_software", "product_studio"]}
+      {"filter": 1, "reason": "marketing-only agency, builds no software", "has_site": true, "flags_any": ["marketing"], "flags_none": ["builds_software", "product_studio"]},
+      {"filter": 2, "reason": "sells QA or staff augmentation itself", "has_site": true, "flags_all": ["subcontract_lang", "qa_strong"]},
+      {"filter": 3, "reason": "4+ in-house QA engineers, they already have the team", "capacity_min": 4}
     ],
     "tiers": [
       {"tier": "A", "geo_in": ["UK", "Germany", "Netherlands", "Ireland", "Denmark", "Sweden", "Norway", "Finland"], "size_min": 11, "size_max": 50, "flags_any": ["maintenance"]},
@@ -147,6 +147,7 @@
       "weak-signal": "the team is growing and testing stays the bottleneck",
       "datapoint": "fixed-scope test automation instead of developers testing their own code"
     },
+    "why_buyer": "{positioning} ({sectors}); ships software with no QA team of its own, so it buys testing instead of selling it",
     "opener": {"event": "event", "weak-signal": "event", "datapoint": "data point"},
     "observation": {
       "S01": "You have an open {role} role on your careers page.",

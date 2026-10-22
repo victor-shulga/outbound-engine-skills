@@ -49,7 +49,7 @@ The order never changes. Blocks 7 and 9 adapt to the client; the rest are identi
 | 5 | Signal | signal_type, signal_name, signal_score, signal_route, evidence URL, date, age, window, summary, 2nd/3rd signal |
 | 6 | Data point | datapoint_type, datapoint_detail |
 | 7 | Proof of current work (client-specific) | capacity_in_house, jobs_open, jobs_role, jobs_source |
-| 8 | Source control | match_method, channel_route, exclusion_reason, source_track |
+| 8 | Source control | match_method, channel_route, exclusion_reason (always starts with the filter: `1 model` · `2 competitor` · `3 size/geo` · `4 already ours`, then `: reason`), source_track, why_buyer (one line: what they sell and to whom, why they buy our service instead of selling it; empty only on removed rows) |
 | 9 | Website (client-specific) | site_status, site_cms, site_builders, site_own_stack, site_pages, site_flags |
 | 10 | Contact | first/last name, title, LinkedIn, e-mail, email_status, company_linkedin |
 | 11 | Text | language, angle, observation, guess, question, opener_style, text_gate, text_gate_reason, hook_source, hook_date |

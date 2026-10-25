@@ -37,6 +37,21 @@ A workable default — tune the weights, keep the shape:
 | Timeline — a date or a window they named | 10 | after contact |
 | Access — you are talking to the person who decides, or to a champion who will carry it | 10 | after contact |
 
+Each block on levels, so the score reads the same whoever fills it in:
+
+| Block | Full | Partial | 0 |
+|---|---|---|---|
+| Prospect profile (30) | the `prospect-scoring` total, carried over | — | — |
+| Engagement (15) | 15 · came to a call | 10 · asked something real · 5 · "send me info" | no reply |
+| Deal potential (20) | 20 · named a budget at or above your minimum deal | 10 · named one below it, or only a range | no number named |
+| Decision path (15) | 15 · you know who signs and how they buy | 8 · you know who signs, not the process | unknown |
+| Timeline (10) | 10 · a date within 3 months | 5 · "this year" or later | no timeline |
+| Access (10) | 10 · talking to the decision-maker | 5 · talking to a champion who will carry it | whoever happened to reply |
+
+Score → action, as starting bands (recalibrate, see below): **60+** a call · **40–59** one
+qualifying question aimed at a block that scored 0 · **below 40** nurture track · **stop** (confirmed
+non-target or opt-out) out of all campaigns whatever the total.
+
 **Hard ceiling rule.** A lead with zero post-contact points cannot outrank one that has them,
 however good its profile. Cap uncontacted rows below the top band. Otherwise the queue fills with
 beautiful strangers and the people who actually replied sit behind them.

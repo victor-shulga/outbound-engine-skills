@@ -32,8 +32,24 @@ Profile only. A workable default, to be tuned per ICP:
 | ICP fit — are they the kind of company we serve | 15 | their own description of themselves: site, company page, specialties |
 | Services fit — do they need the specific thing we sell | 15 | services listed, work shown, capability they clearly lack or clearly run in-house |
 
+Each dimension is scored on four levels, so two people scoring the same account land on the same number:
+
+| Points | ICP fit | Services fit |
+|---:|---|---|
+| 15 | their own description names your niche and sub-industry | they do not have this service, and the work for it is visibly there |
+| 10 | your industry, a neighbouring sub-industry | they run it in-house, but with 1–2 people |
+| 5 | the description is vague, the niche has to be guessed | they have their own team; your service would only add to it |
+| 0 | no data → `data-gap` flag | no data → `data-gap` flag |
+
 **Gate:** a floor on the total (e.g. 20 of 30). Below it the account does not enter outreach,
 whatever else is true about it.
+
+| Example | Total | Decision |
+|---|---:|---|
+| 15 + 10 | 25 | outreach |
+| 10 + 10 | 20 | outreach |
+| 15 + 0 | 15 | fill the data gap, then score again |
+| 5 + 5 | 10 | no outreach |
 
 Add a dimension only if it is (a) readable cold, (b) not already a gate, and (c) actually varies
 across the base. Deal potential qualifies only when the base genuinely carries it — usually it does

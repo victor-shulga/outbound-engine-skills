@@ -22,6 +22,26 @@ Take an ICP, a set of buyer personas, and a list of signals — generate a full 
 4. Assign a priority score to each hypothesis (1–3) based on: signal specificity, persona authority, angle strength
 5. Return the full matrix sorted by priority, with a one-line description of each
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=hypothesis-matrix,buying-signal,angle,decision-maker -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| hypothesis matrix | таблиця гіпотез | список варіантів «кому · з чим · через який канал» для перевірки в розсилках. |
+| buying signal | ознака готовності купувати | факт про компанію, після якого розмова про вашу послугу доречна саме зараз. |
+| angle, differentiation angle | кут подачі | одна думка, з якою ви заходите до покупця: його біль, ваш доказ і фраза, яку він повторить. |
+| decision maker | ОПР (особа, що приймає рішення) | той, хто підписує: власник, операційний директор, керівник напряму |
+<!-- glossary:end -->
+
 ## Output format
 
 ```

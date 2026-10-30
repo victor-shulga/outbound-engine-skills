@@ -136,10 +136,38 @@ the expected range **for this anchor type**, the sample size the verdict is read
 stop rule. A 1.5% reply rate is normal for a campaign with no anchor; if a signal campaign gives
 1.5%, it is not a signal campaign. Numbers, sources and test math: `references/benchmarks.md`.
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=sequence,buying-signal,data-point,outreach-anchor,spf-dkim-dmarc,warmup,bounce-rate,reply-rate,interest-cta,decision-maker,day-to-day-owner,breakup-email,abm,sending-capacity,spintax mode=copy -->
+Rules for every text a reader will see (post, email, message, page copy):
+
+1. **No internal codes or letter scales** (A/B/C, D L T E, scores without words, framework codes). Write the meaning.
+2. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English. A term the reader may not know gets explained in the same sentence or replaced.
+3. **Any review, audit or report this skill produces for the team or the client** follows the document rules: open it with «Словник цього документа» (terms used, at most 10), do not score what depends on unfinished work, and open each section with one concrete action.
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| sequences and templates | ланцюжки листів і шаблони | серія з кількох листів чи повідомлень одному проспекту з паузами між ними. |
+| buying signal | ознака готовності купувати | факт про компанію, після якого розмова про вашу послугу доречна саме зараз. |
+| data point, state signal | факт про компанію (дата-поінт) | Факт з їхнього сайту чи вакансії, з якого відкриваємо лист; подія підказує, коли писати, а факт підказує, що сказати. |
+| anchor, Type A / B / C (signal / data-point / segment insight) | зачіпка серії: свіжа подія · факт у порівнянні з нормою · спостереження про вузький сегмент | на чому стоїть уся серія; без зачіпки лист читається як масова розсилка |
+| SPF / DKIM / DMARC, MX | SPF, DKIM, DMARC (записи, що підтверджують домен) | Технічні записи в налаштуваннях домену, які доводять поштовим сервісам, що лист справді від вас; без них листи йдуть у спам. |
+| warmup | прогрів поштових скриньок | поступове збільшення кількості листів з нової скриньки, щоб пошта не потрапила в спам. |
+| bounce | відмови доставки | частка листів, які не дійшли, бо адреса неправильна чи мертва. |
+| reply rate | частка відповідей | скільки людей з тих, кому написали, відповіли. |
+| interest-based CTA, soft CTA | м'яке прохання в кінці листа | питання про інтерес до теми без запрошення на дзвінок; дзвінок пропонуємо після відповіді |
+| decision maker | ОПР (особа, що приймає рішення) | той, хто підписує: власник, операційний директор, керівник напряму |
+| day-to-day owner, champion | той, хто працюватиме з вами щодня | керівник проєкту, BIM-менеджер, керівник розробки; йому важливе інше, ніж ОПР |
+| breakup, breakup email | останній лист серії | визнає, що час може бути невдалий, і закриває серію без тиску |
+| ABM | персональна робота з коротким списком компаній | Коли компаній лише кілька сотень, кожну опрацьовуємо вручну замість масової кампанії. |
+| capacity, monthly ceiling | місткість розсилки | скільки листів реально відправимо за місяць: скриньки × 25 × 20 робочих днів |
+| spintax | автоматична заміна слів у листі | прийом для варіативності, який читається як шаблон; не використовуємо |
+<!-- glossary:end -->
+
 ## Output format
 
 1. **Gate report**: the five items, pass/fail, what is missing.
-2. **Anchor**: type, the exact observation, expiry window, comparison used.
+2. **Anchor**: its type in words (a dated event / a measurable fact against a norm / a narrow segment insight), the exact observation, expiry window, comparison used.
 3. **Sizing**: N, C, contacts per month, channel mix, list split.
 4. **Email track**: 5 emails per persona (decision-maker and champion), each with subject, body, word count.
 5. **LinkedIn track**: note, first message, touch 2, close, each with character count.

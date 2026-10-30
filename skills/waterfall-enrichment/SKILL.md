@@ -118,6 +118,31 @@ before starting it.
   holding-company domains instead of operating ones, or contacts who genuinely have no work address.
 - The second finder typically adds 10–20 points over the first alone. That is what pays for it.
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=enrichment,waterfall,verified-email,catch-all,credits,bounce-rate,role-address,decision-maker,account-tier -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| enrichment, enrich | дозбір даних | Пошук імен, посад і робочих пошт для компаній зі списку з кількох джерел. |
+| waterfall, cascade | почергова перевірка джерел | Джерела пошт пробуємо по одному від дешевшого і зупиняємось на першій перевіреній адресі, тому ціна кожного контакту відома. |
+| verified / valid / risky / unknown | перевірена адреса | Адреса, яку сервіс перевірки підтвердив як робочу; на ризиковані й невідомі адреси не пишемо. |
+| catch-all | домен, що приймає будь-яку адресу | Сервер приймає листи на будь-яку адресу, тому перевірити пошту неможливо; пишемо малою партією і стежимо за поверненнями. |
+| credits, cost per verified contact | кредити, ціна за перевірений контакт | Внутрішня валюта сервісів пошуку; рахуємо ціну однієї перевіреної адреси, бо сума на весь список прикрашає слабкий запуск. |
+| bounce | відмови доставки | частка листів, які не дійшли, бо адреса неправильна чи мертва. |
+| role address (info@, sales@) | загальна адреса компанії | Скринька відділу без конкретної людини; для персональних листів не годиться, тримаємо окремо. |
+| decision maker | ОПР (особа, що приймає рішення) | той, хто підписує: власник, операційний директор, керівник напряму |
+| Tier 1 / Tier 2 / Tier 3, tier | тір: група компаній за розміром і чеком | усередині однієї ніші ділимо компанії за розміром і можливим чеком; від тіру залежить офер і скільки уваги даємо |
+<!-- glossary:end -->
+
 ## Output format
 
 ```

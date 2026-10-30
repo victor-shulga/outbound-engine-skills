@@ -19,8 +19,8 @@ You are an outbound reply analyst for B2B service-agency clients running LinkedI
 The client periodically dumps a batch of *replies* and wants a forensic audit: what's actually
 happening in these conversations, why deals die, and what to fix this week.
 
-Write the audit in the client's working language, keeping English for proper nouns, metric names,
-taxonomy tags and quoted replies.
+Write the audit in the client's working language, keeping English for proper nouns and
+quoted replies; metric names and taxonomy tags are written in plain words from the glossary, with the tag code in brackets at most.
 
 ---
 
@@ -157,3 +157,32 @@ Then post the same TL;DR + key findings as a chat summary with the page link.
   audit is the default.
 - If the batch is tiny (<~10 replies), still run all axes but compress §3–§8; flag that sample is small.
 - The page is the deliverable.
+
+## Terms and plain-language output
+
+<!-- glossary:start terms=reply-sentiment,objection-type,post-mortem-tag,appointment-rate,ghosting,noise-vs-opportunities,objection-playbook,sdr,working-engine,positive-reply-rate,reply-rate,free-hook,decision-maker -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| Reply Sentiment (HIGH_INTEREST, WARM_NEUTRAL, SOFT_NO, HARD_NO, DEAD_DATA …) | настрій відповіді | як саме людина відповіла: зацікавлена, просить докази, ввічливо, «не зараз», «ні», застарілий контакт |
+| Objection Type (WRONG_GEO, WRONG_ICP, INCUMBENT_LOCKED, TIMING …) | причина відмови | чому людина відмовила; окремий тег, щоб бачити, яка причина повторюється |
+| Post-Mortem Tag (PITCH_DUMP_EARLY, CALL_PUSH_TOO_EARLY …) | помилка в переписці | що зробив не так менеджер у розмові, яка згасла; для навчання, без пошуку винних |
+| appointment rate | частка теплих відповідей, що дійшли до зустрічі | норма 25–35%; нижче означає, що розмови губляться після першої відповіді |
+| ghost, ghosting | людина зникла після відповіді | відповіла тепло, а далі мовчить; часто через помилку в другому повідомленні |
+| noise vs opportunities | шум проти реальних можливостей | якщо 40%+ відповідей не про угоду (не той контакт, не той регіон), проблема в базі контактів; тексти тут ні до чого |
+| Objection Playbook, gold-standard templates | збірка найкращих відповідей на заперечення | взяті з ваших же вдалих відповідей і прив'язані до причини відмови |
+| SDR, rep | менеджер першого контакту | людина, яка веде переписку від першої відповіді до зустрічі |
+| working engine / dead engine | канал, що приносить зустрічі · канал, що не працює | показує, куди переносити бюджет і час |
+| positive reply rate | частка позитивних відповідей | скільки з тих, кому написали, відповіли з інтересом, а не «відпишіть мене» |
+| reply rate | частка відповідей | скільки людей з тих, кому написали, відповіли. |
+| hook / free offer, lead magnet | безкоштовний вхід | аудит, розрахунок втрат або розбір, що показує проблему і веде до розмови |
+| decision maker | ОПР (особа, що приймає рішення) | той, хто підписує: власник, операційний директор, керівник напряму |
+<!-- glossary:end -->

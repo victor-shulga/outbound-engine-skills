@@ -105,10 +105,35 @@ is not discarded.
 Keep the numbers in separate columns. The moment they are merged into one "headcount" field, you can
 no longer tell a verified figure from an inferred one.
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=fit-score,fit-gate,data-gap,data-confidence,outreach-queue,buying-signal,data-point,account-tier,enrichment -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| ICP fit, services fit, prospect score, prospect profile | оцінка відповідності профілю | Бали за те, чи компанія з вашої ніші і чи їй бракує саме вашої послуги; рахуємо ще до першого контакту. |
+| gate, fit gate, floor, hard gate, clamp | стоп-фільтр (мінімальний поріг) | Межа, нижче якої компанії не пишемо, хоч би що ще про неї було відомо. |
+| data-gap flag, missing → 0 | бракує даних | Поле, яке не вдалося знайти, ставимо в нуль з позначкою; середнє значення не вгадуємо. |
+| data confidence H / M / L | впевненість у даних: висока · середня · низька | Наскільки заповнені й перевірені поля компанії; від цього залежить, чи можна довіряти оцінці. |
+| queue A / B / D, no-signal queue | черга: свіжий сигнал · слабший чи старіший сигнал · без сигналу | Від черги залежить, з чого відкриваємо лист: з події з датою чи з факту з їхнього сайту; відсутність сигналу не знижує оцінку. |
+| buying signal | ознака готовності купувати | факт про компанію, після якого розмова про вашу послугу доречна саме зараз. |
+| data point, state signal | факт про компанію (дата-поінт) | Факт з їхнього сайту чи вакансії, з якого відкриваємо лист; подія підказує, коли писати, а факт підказує, що сказати. |
+| Tier 1 / Tier 2 / Tier 3, tier | тір: група компаній за розміром і чеком | усередині однієї ніші ділимо компанії за розміром і можливим чеком; від тіру залежить офер і скільки уваги даємо |
+| enrichment, enrich | дозбір даних | Пошук імен, посад і робочих пошт для компаній зі списку з кількох джерел. |
+<!-- glossary:end -->
+
 ## Output
 
 One row per account: `Company · Tier · per-dimension points · Raw total · Normalised total ·
-Data confidence (H/M/L) · Gate (pass/fail) · Queue (A/B/D) · Missing fields`.
+Data confidence in words (high / medium / low) · Passes the fit floor (yes / no) · Outreach queue in words (fresh dated signal / weaker or older signal / no signal, opens on a fact from their site) · Missing fields`.
 
 Plus a `data-gap` list: accounts that need enrichment before the score means anything. Rows that fail
 the gate stay in the file with the reason — deleting them means re-buying and re-researching them a

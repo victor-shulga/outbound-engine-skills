@@ -49,7 +49,7 @@ Typical groups. Adapt to the niche — a construction niche has permits and tend
 
 ### 3. Fill four columns per row
 
-`# · signal · track (С/Д) · detection tool · freshness window`
+`# · signal · type in words (event / standing fact) · detection tool · freshness window`
 
 Detection tool must be a specific named tool, not "research." Freshness must be a number of days or the word `стан` for a data point.
 
@@ -85,6 +85,30 @@ If no bundle reaches the gate, the niche is too narrow. Say so, and offer the wi
 3. **Benchmarks are directional.** Vendor-published reply rates (18–22% single signal, 35–40% stacked) are marketing. The working ceiling is ~10% positive replies on a signal campaign.
 4. **Enterprise intent platforms are out of scope** for teams under enterprise budget. Name them, price them, move on.
 5. State which rows are new to the catalog and worth keeping for the next niche.
+
+## Terms and plain-language output
+
+<!-- glossary:start terms=buying-signal,data-point,signal-track,signal-score-factors,signal-bundle,volume-gate,freshness-window,intent-data -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| buying signal | ознака готовності купувати | факт про компанію, після якого розмова про вашу послугу доречна саме зараз. |
+| data point, state signal | факт про компанію (дата-поінт) | Факт з їхнього сайту чи вакансії, з якого відкриваємо лист; подія підказує, коли писати, а факт підказує, що сказати. |
+| track С / Д | тип рядка: подія · постійний факт | подія підказує, коли писати; факт підказує, що сказати, і сам не працює |
+| score = Scrape, Scaling, Problem, Offer, Trigger | оцінка сигналу за п'ятьма ознаками | наскільки легко знайти, чи вистачить обсягу, чи доводить біль, чи є готовий офер, наскільки сильний привід писати сьогодні |
+| bundle | зв'язка сигналів | кілька споріднених сигналів під однією темою листа, щоб набрати обсяг для тесту |
+| volume gate, 300 / 500 rule | мінімальний обсяг для тесту | 300 компаній для гіпотези на події, 500 для гіпотези на факті; менше означає «не перевірено» |
+| freshness window, expiry window, decay | термін свіжості сигналу | скільки днів сигнал ще дає привід писати; потім він стає просто фактом |
+| intent data | дані про намір купувати | сигнали, що компанія зараз шукає таку послугу: пошукові запити, відвідування сторінок, вакансії. |
+<!-- glossary:end -->
 
 ## Output
 

@@ -131,3 +131,34 @@ Next: run `[skill]` — [one line on what it produces]
 ```
 
 Then stop. Do not pre-empt the skill's own questions or summarise what it will say. When someone returns with the same complaint twice, do not route them to the same skill twice — name the assumption that is probably wrong instead.
+
+## Terms and plain-language output
+
+<!-- glossary:start terms=buying-signal,data-point,stage-gate,hypothesis,enrichment,outreach-queue,campaign-tier,interest-rate,reply-rate,sequence,spf-dkim-dmarc,warmup,abm,personal-fields,cta -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| buying signal | ознака готовності купувати | факт про компанію, після якого розмова про вашу послугу доречна саме зараз. |
+| data point, state signal | факт про компанію (дата-поінт) | Факт з їхнього сайту чи вакансії, з якого відкриваємо лист; подія підказує, коли писати, а факт підказує, що сказати. |
+| gate G1–G8, volume gate | обов'язкова перевірка перед наступним кроком | Умова, без якої наступний крок не має сенсу, наприклад налаштовані домени чи 300 компаній на гіпотезу. |
+| hypothesis | гіпотеза (кому, на яку подію, з якою пропозицією) | Одне припущення, яке перевіряє кампанія; результати рахуємо окремо по кожній гіпотезі. |
+| enrichment, enrich | дозбір даних | Пошук імен, посад і робочих пошт для компаній зі списку з кількох джерел. |
+| queue A / B / D, no-signal queue | черга: свіжий сигнал · слабший чи старіший сигнал · без сигналу | Від черги залежить, з чого відкриваємо лист: з події з датою чи з факту з їхнього сайту; відсутність сигналу не знижує оцінку. |
+| Tier 1 Scale / Tier 2 Optimize / Kill | рішення по кампанії: нарощуємо · допрацьовуємо · зупиняємо | Сортування кампаній за часткою зацікавлених відповідей: понад 30% нарощуємо, 17–30% правимо текст, нижче 17% зупиняємо. |
+| interest rate, interested | частка зацікавлених відповідей | Яка частка відповідей показує справжнє бажання продовжити розмову; автовідповіді й відмови сюди не входять. |
+| reply rate | частка відповідей | скільки людей з тих, кому написали, відповіли. |
+| sequences and templates | ланцюжки листів і шаблони | серія з кількох листів чи повідомлень одному проспекту з паузами між ними. |
+| SPF / DKIM / DMARC, MX | SPF, DKIM, DMARC (записи, що підтверджують домен) | Технічні записи в налаштуваннях домену, які доводять поштовим сервісам, що лист справді від вас; без них листи йдуть у спам. |
+| warmup | прогрів поштових скриньок | поступове збільшення кількості листів з нової скриньки, щоб пошта не потрапила в спам. |
+| ABM | персональна робота з коротким списком компаній | Коли компаній лише кілька сотень, кожну опрацьовуємо вручну замість масової кампанії. |
+| two generated fields, personalization, {{first_line}} | два персональні поля в листі | Лист має сталий каркас, а модель пише лише перший рядок і ще одне поле з думкою про цю компанію. |
+| CTA | прохання в кінці листа | конкретний маленький наступний крок: відповісти, подивитися, погодитися на дзвінок |
+<!-- glossary:end -->

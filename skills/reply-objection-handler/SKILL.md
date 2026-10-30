@@ -129,6 +129,26 @@ reply-audit, so the message you write aggregates cleanly later.)
     ~20/day on a free account, ~150/day on Premium/Sales Nav. Vary timing and wording across a sequence;
     never blast an identical message at volume. (Guardrail for client SDRs running LinkedIn outreach.)
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=intent-tier,reply-taxonomy,incumbent,opt-out,ghost,decision-maker,nurture mode=copy -->
+Rules for every text a reader will see (post, email, message, page copy):
+
+1. **No internal codes or letter scales** (A/B/C, D L T E, scores without words, framework codes). Write the meaning.
+2. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English. A term the reader may not know gets explained in the same sentence or replaced.
+3. **Any review, audit or report this skill produces for the team or the client** follows the document rules: open it with «Словник цього документа» (terms used, at most 10), do not score what depends on unfinished work, and open each section with one concrete action.
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| intent tier T1 / T2 / T3 | терміновість відповіді: бронюємо зустріч · одне уточнююче питання · лишаємо двері відчиненими | Як швидко відповідати: на прохання про зустріч за 2 години, на загальний інтерес і «не зараз» того ж дня. |
+| reply type tags (HOT, SOFT_NO, HARD_NO, CURIOUS_PROBING, WANTS_PROOF...) | тип відповіді | Мітка про стан ліда і причину його відповіді; у тексті для людей пишемо словами, коди лишаються лише в мітках CRM. |
+| incumbent / in-house | вже є підрядник або своя команда | Найчастіше заперечення; з ним не сперечаємось, пропонуємо закривати пікові навантаження. |
+| opt-out, hard no | просить більше не писати | Людину одразу прибираємо з усіх кампаній, без спроб переконати. |
+| ghost, ghosted, bump | замовк · нагадування | Людина перестала відповідати; кожне нагадування несе новий аргумент, максимум два-три. |
+| decision maker | ОПР (особа, що приймає рішення) | той, хто підписує: власник, операційний директор, керівник напряму |
+| nurture | догрів | регулярні корисні дотики до тих, хто ще не готовий купувати. |
+<!-- glossary:end -->
+
 ## Step 5 — Output
 
 ```

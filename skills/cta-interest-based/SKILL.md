@@ -138,3 +138,21 @@ Method by Victor Shulga (victorshulga.com), from his workshop on trigger-based o
 families (specific, open-ended, interest) follow a common sales-training classification; the red-flag
 list and the 0-6 scoring were adapted from an earlier CTA-review skill in the same collection and
 rewritten here.
+
+## Terms and plain-language output
+
+<!-- glossary:start terms=cta,interest-cta,breakup-email,reply-rate,open-rate mode=copy -->
+Rules for every text a reader will see (post, email, message, page copy):
+
+1. **No internal codes or letter scales** (A/B/C, D L T E, scores without words, framework codes). Write the meaning.
+2. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English. A term the reader may not know gets explained in the same sentence or replaced.
+3. **Any review, audit or report this skill produces for the team or the client** follows the document rules: open it with «Словник цього документа» (terms used, at most 10), do not score what depends on unfinished work, and open each section with one concrete action.
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| CTA | прохання в кінці листа | конкретний маленький наступний крок: відповісти, подивитися, погодитися на дзвінок |
+| interest-based CTA, soft CTA | м'яке прохання в кінці листа | питання про інтерес до теми без запрошення на дзвінок; дзвінок пропонуємо після відповіді |
+| breakup, breakup email | останній лист серії | визнає, що час може бути невдалий, і закриває серію без тиску |
+| reply rate | частка відповідей | скільки людей з тих, кому написали, відповіли. |
+| open rate, opens | частка відкриттів | Скільки листів відкрили; число неточне, бо поштові сервіси самі відкривають листи, тож це лише підказка. |
+<!-- glossary:end -->

@@ -96,3 +96,31 @@ email-infrastructure guide and an outbound agency's lessons from 10M+ emails; fr
 to their creators. Further figures from a cold-email playsheet built on a sending platform's data
 (2025) and Google's email sender guidelines. Router, practitioner rules and re-engagement templates: Victor Shulga
 (victorshulga.com).
+
+## Terms and plain-language output
+
+<!-- glossary:start terms=spf-dkim-dmarc,warmup,bounce-rate,reply-rate,positive-reply-rate,open-rate,secondary-domain,blacklist,send-caps,sequence,tam,cta -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| SPF / DKIM / DMARC, MX | SPF, DKIM, DMARC (записи, що підтверджують домен) | Технічні записи в налаштуваннях домену, які доводять поштовим сервісам, що лист справді від вас; без них листи йдуть у спам. |
+| warmup | прогрів поштових скриньок | поступове збільшення кількості листів з нової скриньки, щоб пошта не потрапила в спам. |
+| bounce | відмови доставки | частка листів, які не дійшли, бо адреса неправильна чи мертва. |
+| reply rate | частка відповідей | скільки людей з тих, кому написали, відповіли. |
+| positive reply rate | частка позитивних відповідей | скільки з тих, кому написали, відповіли з інтересом, а не «відпишіть мене» |
+| open rate, opens | частка відкриттів | Скільки листів відкрили; число неточне, бо поштові сервіси самі відкривають листи, тож це лише підказка. |
+| secondary domain, sending domain | окремий домен для розсилки | Домен, схожий на основний, лише для холодних листів, щоб проблеми з доставкою не зачепили основну пошту. |
+| blacklist, listed | чорний список поштових сервісів | Перелік доменів, яким сервіси не довіряють; потрапили туди, тож розсилку зупиняємо і шукаємо причину. |
+| send caps, daily volume per mailbox, ramp | денний ліміт на скриньку | Скільки листів одна скринька надсилає за день; ліміт піднімаємо поступово і масштабуємось кількістю скриньок. |
+| sequences and templates | ланцюжки листів і шаблони | серія з кількох листів чи повідомлень одному проспекту з паузами між ними. |
+| TAM, TAM reuse | весь ринок (TAM) | Усі компанії, що підходять під ICP; раз на квартал проходимо цей список знову з новим аргументом. |
+| CTA | прохання в кінці листа | конкретний маленький наступний крок: відповісти, подивитися, погодитися на дзвінок |
+<!-- glossary:end -->

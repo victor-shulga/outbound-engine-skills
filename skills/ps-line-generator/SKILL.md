@@ -38,6 +38,20 @@ Write a PS line for a cold email — the most-read part of a long email and the 
 4. Score each: relevant (0–2) + curiosity (0–2) + not salesy (0–2)
 5. Return ranked options with recommendation
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=social-proof mode=copy -->
+Rules for every text a reader will see (post, email, message, page copy):
+
+1. **No internal codes or letter scales** (A/B/C, D L T E, scores without words, framework codes). Write the meaning.
+2. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English. A term the reader may not know gets explained in the same sentence or replaced.
+3. **Any review, audit or report this skill produces for the team or the client** follows the document rules: open it with «Словник цього документа» (terms used, at most 10), do not score what depends on unfinished work, and open each section with one concrete action.
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| social proof | докази від інших | Цифри клієнтів, відгуки, логотипи чи кейси, які підтверджують, що вам можна вірити. |
+<!-- glossary:end -->
+
 ## Output format
 
 ```

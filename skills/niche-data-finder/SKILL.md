@@ -128,6 +128,29 @@ For each shortlisted source give:
   monthly for permits, quarterly for directories).
 - **Expected yield**: accounts per pull, labelled as an estimate with the sample it came from.
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=buying-signal,listable-fact,base-timing-layer,qualification-rate,dedupe-key,procurement-codes,ats -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| buying signal | ознака готовності купувати | факт про компанію, після якого розмова про вашу послугу доречна саме зараз. |
+| listable fact | факт, який хтось публічно записує | членство, ліцензія, тендер, дозвіл чи вакансія; лише такі ознаки можна знайти в джерелах |
+| base layer / timing layer | базове джерело · джерело моменту | перше дає широкий список компаній, друге показує, хто готовий саме зараз |
+| qualification rate | частка тих, хто підходить під ICP | рахуємо на вибірці з 15–20 записів джерела |
+| join key, dedupe key | ключ злиття: домен компанії | за доменом поєднуємо записи з різних джерел і прибираємо дублікати |
+| CPV / NAICS / UNSPSC | коди галузей у тендерах | за ними шукаємо потрібні закупівлі на державних порталах |
+| ATS, ATS aggregator, career sites | система найму на сайті компанії | сервіси на кшталт Greenhouse чи Lever, звідки беремо повний текст вакансій |
+<!-- glossary:end -->
+
 ## Output format
 
 ```

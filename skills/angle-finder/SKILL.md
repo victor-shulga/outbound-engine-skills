@@ -107,6 +107,32 @@ the same core pain.
 
 ---
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=angle,icp-fit-score,buying-signal,hook,interest-cta,breakup-email,connection-note,ab-test,reply-rate,proof -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| angle, differentiation angle | кут подачі | одна думка, з якою ви заходите до покупця: його біль, ваш доказ і фраза, яку він повторить. |
+| ICP fit X/10 | відповідність ICP, бали з 10 | посада, розмір, галузь, привід і стек; нижче 5 означає, що людина поза основним ICP |
+| buying signal | ознака готовності купувати | факт про компанію, після якого розмова про вашу послугу доречна саме зараз. |
+| hook, cold hook | гачок | перший рядок листа, через який людина читає далі |
+| interest-based CTA, soft CTA | м'яке прохання в кінці листа | питання про інтерес до теми без запрошення на дзвінок; дзвінок пропонуємо після відповіді |
+| breakup, breakup email | останній лист серії | визнає, що час може бути невдалий, і закриває серію без тиску |
+| connection note, invite note | записка до запрошення в LinkedIn | до 300 знаків, без продажу |
+| A/B test, test ideas, hypotheses | A/B-тест | показуємо половині відвідувачів один варіант, половині інший і дивимось, який дає більше заявок. |
+| reply rate | частка відповідей | скільки людей з тих, кому написали, відповіли. |
+| proof, [TODO: need case] | доказ | кейс, цифра або відгук, що підтверджують обіцянку; якщо його немає, пишемо «потрібен кейс», а не вигадуємо |
+<!-- glossary:end -->
+
 ## Phase 4: Output
 
 ### PERSONA mode: exactly 3 angles, then a recommendation

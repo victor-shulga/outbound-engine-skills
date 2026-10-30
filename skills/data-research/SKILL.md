@@ -135,6 +135,37 @@ Mixing A and D into one campaign hides both the strong and the weak segment behi
 Decision maker and champion are separate campaigns — different pains, different questions. Titles
 outside the persona matrix get their own campaign flagged for review.
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=buying-signal,data-point,stop-filter,anti-icp,account-tier,signal-queue,enrichment,waterfall-enrichment,decision-maker,day-to-day-owner,heat-tier,data-confidence,fit-gate,text-check,volume-gate -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| buying signal | ознака готовності купувати | факт про компанію, після якого розмова про вашу послугу доречна саме зараз. |
+| data point, state signal | факт про компанію (дата-поінт) | Факт з їхнього сайту чи вакансії, з якого відкриваємо лист; подія підказує, коли писати, а факт підказує, що сказати. |
+| stop-filter, hard gate, deny-list | стоп-фільтр | одна ознака «ні» прибирає компанію до будь-яких витрат на дослідження |
+| Anti-ICP, disqualifiers | кому не продаємо | ознаки компаній, з якими не працюємо, щоб не витрачати на них час. |
+| Tier 1 / Tier 2 / Tier 3, tier | тір: група компаній за розміром і чеком | усередині однієї ніші ділимо компанії за розміром і можливим чеком; від тіру залежить офер і скільки уваги даємо |
+| Queue A / B / D, event / weak-signal / datapoint queue | черга: свіжа подія · слабший сигнал · без сигналу, лише факт | кожна черга йде окремою кампанією, щоб середнє не ховало сильний і слабкий сегмент |
+| enrichment, enrich | дозбір даних | Пошук імен, посад і робочих пошт для компаній зі списку з кількох джерел. |
+| email waterfall, waterfall-enrichment | пошук пошти по черзі в кількох сервісах | якщо перший сервіс не знайшов адресу, питаємо наступний; платимо лише за знахідки |
+| decision maker | ОПР (особа, що приймає рішення) | той, хто підписує: власник, операційний директор, керівник напряму |
+| day-to-day owner, champion | той, хто працюватиме з вами щодня | керівник проєкту, BIM-менеджер, керівник розробки; йому важливе інше, ніж ОПР |
+| Hot / Warm / Cool / Drop, band | гарячий · теплий · прохолодний · відкласти | наскільки терміново писати компанії за сукупністю відповідності і сигналу |
+| data confidence H / M / L | впевненість у даних: висока · середня · низька | Наскільки заповнені й перевірені поля компанії; від цього залежить, чи можна довіряти оцінці. |
+| gate, fit gate, floor, hard gate, clamp | стоп-фільтр (мінімальний поріг) | Межа, нижче якої компанії не пишемо, хоч би що ще про неї було відомо. |
+| text_gate ok / review, hook_source | перевірка першого рядка | рядок іде у відправку лише тоді, коли під ним є реальний доказ із джерелом |
+| volume gate, 300 / 500 rule | мінімальний обсяг для тесту | 300 компаній для гіпотези на події, 500 для гіпотези на факті; менше означає «не перевірено» |
+<!-- glossary:end -->
+
 ## Output
 
 Flat CSV, one header row, values not formulas, no grouped rows above the columns. **Two files with

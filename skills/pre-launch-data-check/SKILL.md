@@ -86,6 +86,34 @@ run the check on a sample; the problems live in the tail.
 6. Give the verdict and one next step. On GO, hand off to `deliverability-audit` if the mailboxes
    were not checked this week, otherwise to upload.
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=suppression-list,catch-all,role-address,merge-variable,launch-verdict,volume-gate,freshness-window,evidence-url,signal-queue,bounce-rate,enrichment,sequencer -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| suppression, suppression list, DNC | список виключень | поточні клієнти, ті, з ким уже йде розмова, і ті, хто просив не писати |
+| catch-all | домен, що приймає будь-яку адресу | Сервер приймає листи на будь-яку адресу, тому перевірити пошту неможливо; пишемо малою партією і стежимо за поверненнями. |
+| role address (info@, sales@) | загальна адреса компанії | Скринька відділу без конкретної людини; для персональних листів не годиться, тримаємо окремо. |
+| variable, {{first_line}}, unrendered | змінна в шаблоні листа | поле, яке підставляється в текст; порожнє чи непідставлене видно читачу в першому рядку |
+| GO / GO WITH FIXES / STOP | можна запускати · запускати після виправлень · стоп | підсумок перевірки бази перед першою відправкою |
+| volume gate, 300 / 500 rule | мінімальний обсяг для тесту | 300 компаній для гіпотези на події, 500 для гіпотези на факті; менше означає «не перевірено» |
+| freshness window, expiry window, decay | термін свіжості сигналу | скільки днів сигнал ще дає привід писати; потім він стає просто фактом |
+| signal_evidence_url, proof link, source URL | посилання-доказ | адреса сторінки, де видно подію або факт; без нього сигнал не рахуємо |
+| Queue A / B / D, event / weak-signal / datapoint queue | черга: свіжа подія · слабший сигнал · без сигналу, лише факт | кожна черга йде окремою кампанією, щоб середнє не ховало сильний і слабкий сегмент |
+| bounce | відмови доставки | частка листів, які не дійшли, бо адреса неправильна чи мертва. |
+| enrichment, enrich | дозбір даних | Пошук імен, посад і робочих пошт для компаній зі списку з кількох джерел. |
+| sequencer, sending tool | сервіс розсилки | інструмент на кшталт Instantly, який відправляє серії за розкладом |
+<!-- glossary:end -->
+
 ## Output format
 
 ```

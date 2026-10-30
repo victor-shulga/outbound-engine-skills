@@ -44,11 +44,26 @@ Write follow-up messages for leads who engaged (opened, clicked, partial reply) 
 4. If it doesn't add new value — don't send it
 5. Return the message with context on when to send it
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=nurture,cta mode=copy -->
+Rules for every text a reader will see (post, email, message, page copy):
+
+1. **No internal codes or letter scales** (A/B/C, D L T E, scores without words, framework codes). Write the meaning.
+2. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English. A term the reader may not know gets explained in the same sentence or replaced.
+3. **Any review, audit or report this skill produces for the team or the client** follows the document rules: open it with «Словник цього документа» (terms used, at most 10), do not score what depends on unfinished work, and open each section with one concrete action.
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| nurture | догрів | регулярні корисні дотики до тих, хто ще не готовий купувати. |
+| CTA | прохання в кінці листа | конкретний маленький наступний крок: відповісти, подивитися, погодитися на дзвінок |
+<!-- glossary:end -->
+
 ## Output format
 
 ```
 Follow-up: [lead name / company]
-Type: [A / B / C / D]
+Type, in words: [no reply to the sequence / replied once then went quiet / interested but did not book / asked to come back later]
 Last contact: [date]
 Send on: [date or trigger]
 

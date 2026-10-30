@@ -36,6 +36,29 @@ Review all running campaigns and sort them into three tiers — scale, optimize,
 6. For Tier 2: suggest one specific optimization to test
 7. For Kill: identify the most likely root cause (targeting, copy, angle, or signal)
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=campaign-tier,interest-rate,reply-rate,open-rate,buying-signal,hypothesis,root-cause -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| Tier 1 Scale / Tier 2 Optimize / Kill | рішення по кампанії: нарощуємо · допрацьовуємо · зупиняємо | Сортування кампаній за часткою зацікавлених відповідей: понад 30% нарощуємо, 17–30% правимо текст, нижче 17% зупиняємо. |
+| interest rate, interested | частка зацікавлених відповідей | Яка частка відповідей показує справжнє бажання продовжити розмову; автовідповіді й відмови сюди не входять. |
+| reply rate | частка відповідей | скільки людей з тих, кому написали, відповіли. |
+| open rate, opens | частка відкриттів | Скільки листів відкрили; число неточне, бо поштові сервіси самі відкривають листи, тож це лише підказка. |
+| buying signal | ознака готовності купувати | факт про компанію, після якого розмова про вашу послугу доречна саме зараз. |
+| hypothesis | гіпотеза (кому, на яку подію, з якою пропозицією) | Одне припущення, яке перевіряє кампанія; результати рахуємо окремо по кожній гіпотезі. |
+| root cause: targeting/data vs message vs pitch | першопричина: не ті люди чи дані · текст · пропозиція | Що саме зламалось; правимо лише це місце. |
+<!-- glossary:end -->
+
 ## Output format
 
 ```

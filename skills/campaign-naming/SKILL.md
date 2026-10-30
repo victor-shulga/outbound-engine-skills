@@ -47,6 +47,27 @@ A campaign named "Outbound Test 3" tells you nothing. `SDRHire-VPSales-Pipeline-
 4. Check for duplicates — if two campaigns have the same name, the hypotheses are too similar
 5. Return full named list
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=naming-convention,buying-signal,angle,hypothesis,persona -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| naming convention [Signal]-[Persona]-[Angle]-[Channel] | правило назв кампаній: подія · посада · аргумент · канал | Назва кампанії одразу каже, кому, чому зараз і через який канал пишемо. |
+| buying signal | ознака готовності купувати | факт про компанію, після якого розмова про вашу послугу доречна саме зараз. |
+| angle, differentiation angle | кут подачі | одна думка, з якою ви заходите до покупця: його біль, ваш доказ і фраза, яку він повторить. |
+| hypothesis | гіпотеза (кому, на яку подію, з якою пропозицією) | Одне припущення, яке перевіряє кампанія; результати рахуємо окремо по кожній гіпотезі. |
+| persona, persona document | портрет покупця | опис типової людини, що купує: посада, задачі, болі, заперечення, де її шукати; будуємо лише з реальних даних. |
+<!-- glossary:end -->
+
 ## Output format
 
 ```

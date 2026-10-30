@@ -43,6 +43,25 @@ Write a LinkedIn-specific outreach sequence — connection request note + follow
 4. Draft follow-up 2: new angle or social proof, one-line close
 5. Check all three against LinkedIn rules (no URLs in connection note, no spam language)
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=connection-request,follow-up,accept-rate,buying-signal,hypothesis,cta mode=copy -->
+Rules for every text a reader will see (post, email, message, page copy):
+
+1. **No internal codes or letter scales** (A/B/C, D L T E, scores without words, framework codes). Write the meaning.
+2. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English. A term the reader may not know gets explained in the same sentence or replaced.
+3. **Any review, audit or report this skill produces for the team or the client** follows the document rules: open it with «Словник цього документа» (terms used, at most 10), do not score what depends on unfinished work, and open each section with one concrete action.
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| connection request, CR, connection note | запит на контакт у LinkedIn | Запрошення з запискою до 300 символів; у ньому нічого не продаємо, мета лише щоб прийняли. |
+| follow-up, FU1 / FU2 | наступне повідомлення | Повідомлення після запиту на контакт чи першого листа; кожне додає нову думку замість «просто нагадую». |
+| accepted connection rate | частка прийнятих запитів у LinkedIn | скільки людей із тих, кому надіслали запит у контакти, його прийняли. |
+| buying signal | ознака готовності купувати | факт про компанію, після якого розмова про вашу послугу доречна саме зараз. |
+| hypothesis | гіпотеза (кому, на яку подію, з якою пропозицією) | Одне припущення, яке перевіряє кампанія; результати рахуємо окремо по кожній гіпотезі. |
+| CTA | прохання в кінці листа | конкретний маленький наступний крок: відповісти, подивитися, погодитися на дзвінок |
+<!-- glossary:end -->
+
 ## Output format
 
 ```

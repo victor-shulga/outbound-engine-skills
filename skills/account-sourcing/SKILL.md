@@ -62,7 +62,7 @@ Additive, maximum 135. Always report the denominator.
 +10 product in market 3+ years
 ```
 
-Tiers: A ≥ 95 · B 75–94 · C < 75.
+Tiers: first priority ≥ 95 · second priority 75–94 · third priority < 75. In the report write the priority in words; the CSV column may keep A/B/C as a filter value.
 
 **A blank field is not an average.** A company with no founding date silently loses 10 points. That is correct — unknown is not fine — but say which rows were capped, so a thin-data low score is never mistaken for a bad-fit low score.
 
@@ -71,6 +71,30 @@ Tiers: A ≥ 95 · B 75–94 · C < 75.
 Regex on `legacy` produces false positives. Real examples from one run: "building a legendary legacy", "access should not be limited by legacy systems" in a marketing preamble. Roughly one in seven quotes is noise.
 
 Extract one sentence around the match, cap it at 260 characters, and put it in a `proof_snippet` column. Someone reads that column with their eyes before the list goes to enrichment. Ten seconds per account.
+
+## Terms and plain-language output
+
+<!-- glossary:start terms=ats,buying-signal,stop-filter,priority-tier,headcount,proof-snippet,enrichment,anti-icp -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| ATS, ATS aggregator, career sites | система найму на сайті компанії | сервіси на кшталт Greenhouse чи Lever, звідки беремо повний текст вакансій |
+| buying signal | ознака готовності купувати | факт про компанію, після якого розмова про вашу послугу доречна саме зараз. |
+| stop-filter, hard gate, deny-list | стоп-фільтр | одна ознака «ні» прибирає компанію до будь-яких витрат на дослідження |
+| score tier A / B / C (≥95 / 75–94 / <75) | пріоритет: перший · другий · третій | група компанії за сумою балів зі 135 можливих |
+| headcount, emp_final | кількість працівників | беремо зі сторінки компанії в LinkedIn, бо бази часто помиляються в діапазонах |
+| proof_snippet | цитата-доказ з вакансії | одне речення з тексту вакансії, де компанія сама називає свою проблему |
+| enrichment, enrich | дозбір даних | Пошук імен, посад і робочих пошт для компаній зі списку з кількох джерел. |
+| Anti-ICP, disqualifiers | кому не продаємо | ознаки компаній, з якими не працюємо, щоб не витрачати на них час. |
+<!-- glossary:end -->
 
 ## Output
 

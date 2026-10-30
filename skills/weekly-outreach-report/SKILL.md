@@ -71,3 +71,28 @@ report from whatever export the client provides (CSV / Sheet / paste) instead of
 - If your tool renders tables from pipe-delimited text, don't put a literal `|` inside a
   cell — use `·`.
 - Post a 5-line TL;DR back in chat: headline metric, biggest problem, top action.
+
+## Terms and plain-language output
+
+<!-- glossary:start terms=data-quality,accept-rate,reply-rate,positive-reply-rate,sender,root-cause,reply-taxonomy,gold-leads,cta -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| data quality, fake-zero, lifetime-only, dark channel, snapshot | застереження щодо даних | Що в цифрах неповне чи хибне: нуль, який насправді не нуль, показники за весь час замість тижня, канал без даних. |
+| accepted connection rate | частка прийнятих запитів у LinkedIn | скільки людей із тих, кому надіслали запит у контакти, його прийняли. |
+| reply rate | частка відповідей | скільки людей з тих, кому написали, відповіли. |
+| positive reply rate | частка позитивних відповідей | скільки з тих, кому написали, відповіли з інтересом, а не «відпишіть мене» |
+| sender, SDR | відправник | Людина чи акаунт, від імені якого йдуть повідомлення; цифри дивимось по кожному окремо. |
+| root cause: targeting/data vs message vs pitch | першопричина: не ті люди чи дані · текст · пропозиція | Що саме зламалось; правимо лише це місце. |
+| reply type tags (HOT, SOFT_NO, HARD_NO, CURIOUS_PROBING, WANTS_PROOF...) | тип відповіді | Мітка про стан ліда і причину його відповіді; у тексті для людей пишемо словами, коди лишаються лише в мітках CRM. |
+| gold leads | найтепліші ліди | Ліди з позитивною відповіддю; для кожного повна переписка і готова чернетка відповіді. |
+| CTA | прохання в кінці листа | конкретний маленький наступний крок: відповісти, подивитися, погодитися на дзвінок |
+<!-- glossary:end -->

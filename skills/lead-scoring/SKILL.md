@@ -98,6 +98,32 @@ Same rule for the inputs behind a block: where a number could come from several 
 sources in separate columns and note which one was used. Merging them loses the distinction between
 a verified figure and an inferred one exactly when you need it.
 
+## Terms and plain-language output
+
+<!-- glossary:start terms=fit-score,lead-score-band,decision-path,deal-potential,decision-maker,day-to-day-owner,nurture,data-confidence,fit-gate,opt-out -->
+Rules for every document a client or their team will read (review, roast, canvas, offer cards, instruction):
+
+1. **Open with «Словник цього документа»**: only the terms that actually appear in it, at most 10, each as «термін: що це простими словами». Like the definitions section of a contract.
+2. **No internal codes or letter scales in the text** (A/B/C, D L T E, BLEND numbers without words, Own/Shared/Generic, Z1.4, GATE 2.5, T1–T6). Write the meaning instead: «є цифра з клієнтом», not «A».
+3. **Use the plain form from the table below.** English stays only for tool names and for copy that ships in English (promises, hooks, subject lines). If the document is in another language, translate the plain form, never the internal term.
+4. **Do not score what cannot exist yet.** A block that depends on work not done (signal catalog, case studies, a previous step) gets «пропущено: спершу потрібно <що саме>», not a score.
+5. **Every section of a review opens with one concrete action** («до наступного дзвінка: …»), then at most five lines of why. No paragraph that only restates the framework.
+
+
+| Internal term (this skill) | Write for the reader | What it means |
+|---|---|---|
+| ICP fit, services fit, prospect score, prospect profile | оцінка відповідності профілю | Бали за те, чи компанія з вашої ніші і чи їй бракує саме вашої послуги; рахуємо ще до першого контакту. |
+| band (60+ / 40–59 / below 40) | група за сумою балів | оцінку ліда переводимо в групу (наприклад, гарячий · теплий · холодний), і від групи залежить наступний крок |
+| decision path | як ухвалюють рішення | Хто підписує і через які кроки проходить покупка в цій компанії. |
+| confirmed deal potential, deal size | підтверджений бюджет | Сума, яку назвав сам клієнт; число, яке ми припустили, сюди не йде. |
+| decision maker | ОПР (особа, що приймає рішення) | той, хто підписує: власник, операційний директор, керівник напряму |
+| day-to-day owner, champion | той, хто працюватиме з вами щодня | керівник проєкту, BIM-менеджер, керівник розробки; йому важливе інше, ніж ОПР |
+| nurture | догрів | регулярні корисні дотики до тих, хто ще не готовий купувати. |
+| data confidence H / M / L | впевненість у даних: висока · середня · низька | Наскільки заповнені й перевірені поля компанії; від цього залежить, чи можна довіряти оцінці. |
+| gate, fit gate, floor, hard gate, clamp | стоп-фільтр (мінімальний поріг) | Межа, нижче якої компанії не пишемо, хоч би що ще про неї було відомо. |
+| opt-out, hard no | просить більше не писати | Людину одразу прибираємо з усіх кампаній, без спроб переконати. |
+<!-- glossary:end -->
+
 ## Output
 
 One row per lead: `Name · Company · Prospect profile · Engagement · Deal · Decision path · Timeline ·

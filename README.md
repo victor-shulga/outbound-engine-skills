@@ -96,6 +96,8 @@ Skills degrade gracefully: without MCP connections they work from pasted data (C
 
 ## Changelog
 
+**0.8.1** — `reply-objection-handler`: four templates added from live threads: a fast price ask, a self-cancelled inbound booking, a reply that kills the opener's premise, and silence after "we'll send projects when they land".
+
 **0.8.0** — six skills added (34): `niche-data-finder`, `prospect-list-run`, `angle-finder`, `cta-interest-based`, `cold-email-playbook`, `outbound-analyst`. Client tasks and other public skills already pointed at them; now they install. `niche-data-finder`, `outbound-analyst` and the `cold-email-playbook` resources are written fresh, with the borrowed ideas and every benchmark credited to its source inside the skill. References to retired skill names (`copy-generation`, `signal-detection`, `list-building`) now point to `sequence-writer`, `signal-research`, `data-research`.
 
 **0.7.0** — `pre-launch-data-check` added: the last stop-filter before upload. The path had gates for fit, volume, proof and verified addresses, but nothing looked at the final file as it gets sent, so a current client, an unrendered `{{first_line}}` or a 30% catch-all batch could still go out. The check runs seven layers over the rows and returns GO / GO WITH FIXES / STOP with a rows-to-fix file; `signal-outbound` now has ten steps and a G8 gate.

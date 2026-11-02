@@ -330,3 +330,105 @@ Good question, [Name] — [one-line, plain-English what we do]. We work with [pe
 Out of curiosity, does [their situation] ever run into [the pain we solve]?
 ```
 *Source: two curious-probing replies that got "-" and were lost. Don't.*
+
+---
+
+## WANTS_PROOF: "What rates do you have?" (fast one-line price ask on a cold email)
+
+**Trigger:** a quick reply that only asks for rates or pricing, often within minutes of the cold email. Treat it as warm.
+**Play:** Answer with a real number in the first lines; dodging with "depends, let's hop on a call" kills it.
+Show ONLY a "starting from" monthly price. No hourly rate: an hourly number gets compared to the prospect's
+local market and ends the conversation. Add one line of differentiation that makes the package worth more,
+then a short call ask framed as what you need to give a specific number. Keep it this short.
+
+```
+Hi [Name],
+
+We have a few packages, starting from [$low] a month.
+
+[One line of differentiation: what makes the package worth more.]
+
+To give you a more specific answer, I'd need a bit more detail on what you're looking for.
+Would a short call this week work?
+
+[Sender]
+```
+*Source: a fast price ask from a small agency on a cold email. Before sending, confirm the price grid is
+live with the client: don't quote a tier that is still being tested.*
+
+---
+
+## SELF-CANCELLED INBOUND BOOKING (they booked themselves, then cancelled, no reason, no rebook)
+
+**Trigger:** an inbound lead books a call through the booking page, fills the qualification form, then
+cancels their own slot days before it, gives no reason and does not rebook.
+**Play:** Treat as `TIMING`, never `SOFT_NO`: they self-selected in, so intent existed. Do not ask for the
+reason and do not push a new slot, because the cancellation already said no to a call. Ask whether the
+ORIGINAL problem is still live, and offer the answer in writing. Removing the meeting from the ask is what
+makes this repliable.
+
+```
+Hi [Name],
+
+You cancelled the [date] call. I won't ask why.
+
+I'm asking about something else: the [topic from the booking form] you came with, is it still live,
+or has it come off the agenda?
+
+If it's live, I'll write back with where I'd start at your scale. No call needed for that.
+
+Where does it stand now?
+```
+*Source: an inbound booking cancelled without a reason. The lever is the form answer: the booking page
+already captured what they wanted, so the follow-up names the actual problem instead of asking "why did you
+cancel". A cancelled call is a no to the FORMAT, not to the topic.*
+
+---
+
+## FALSE_PREMISE: the signal in the opener does not apply to them
+
+**Trigger:** the cold email was built on a trigger ("[vendor] stops serving your segment in 60 days") and the
+reply just kills the premise: "We don't use [vendor]."
+**Play:** Classify as `CURIOUS_PROBING` / neutral, never `SOFT_NO`: they bothered to correct you, which means
+they read it. Never argue the premise and never re-pitch the same deadline. Concede the point in one line,
+move to the pain that survives without the trigger, hand them a free exit, and close with ONE question that
+makes them name their current stack. That answer is the qualification you never had.
+
+```
+Hi [Name],
+
+Good, then the [deadline] isn't your problem.
+
+The [persona] we talk to in [market] care less about [the trigger topic] and more about [pain that
+survives without the trigger].
+
+If your current setup handles that cleanly, ignore me.
+
+What are you running [the process] on now?
+```
+*Source: a cold campaign built on a vendor deadline. The "ignore me" line keeps it non-pushy: it gives
+permission to say no, so answering feels cheap. ⚠️ A false-premise reply is also a DATA finding: if the
+trigger was assumed rather than verified, the same bounce repeats across the whole segment.*
+
+---
+
+## GHOST after "we'll send projects when they land" (approved supplier, no work yet)
+
+**Trigger:** you got onto the supply chain or vendor list, they said "projects landing over the coming months,
+I'll send details", you asked "when?", silence for 2–3 weeks.
+**Play:** Don't re-ask the date. New reason: your capacity is being booked NOW (season, projects wrapped), so
+you want to hold a slot for them. Ask for ONE concrete package to price. Referral fallback: who else handles
+incoming packages if their desk is full. Phone (mobile from the signature) is the next bump.
+
+```
+Hi [Name],
+
+Quick update from our side. The [two projects I mentioned] have wrapped up, and [quarter] is our busiest
+stretch, so this week we're booking the [team] through to [date].
+
+Before that capacity goes elsewhere, I'd like to keep a slot for [division]. Is there one of the projects
+due to land that we could look at now, even at an early stage, so we can price it?
+
+If your desk is full right now, who else in the [division] team handles incoming packages?
+```
+*Source: an approved subcontractor waiting for its first package.*

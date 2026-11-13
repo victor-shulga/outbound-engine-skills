@@ -35,6 +35,20 @@ Relationship to neighbours:
 
 ---
 
+## Required tools
+
+Install these before running the skill. None of them is strictly required, the skill also runs on pasted input, but without them the result gets noticeably worse: value-first and trigger replies are written without research, and the reply misses what we sent earlier in the thread.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| HeyReach (MCP) | pull the full LinkedIn thread, including what we sent before, and set the platform action | Recommended | you work from a screenshot; earlier messages are often cut off |
+| Instantly (MCP) | pull the full email thread and set the lead status | Recommended | same: the thread is pasted by hand |
+| Firecrawl (MCP) | research company news and strategy for value-first, trigger and inbound-post plays | Recommended | brackets in those templates stay generic, which the templates forbid |
+| Apify (LinkedIn profile and posts actors) | read the person's role, tenure and the post that triggered the reply | Recommended | role and trigger come only from the thread |
+| CRM (Twenty or HubSpot) | log the note, the tag and the future date from a timing reply | Recommended | the follow-up date lives only in chat and gets lost |
+
+Alternatives: Aimfox or Expandi can stand in for HeyReach; lemlist or Smartlead can stand in for Instantly; Exa can stand in for Firecrawl; Sales Navigator can stand in for Apify.
+
 ## Step 1 — Read the input and gather context
 
 1. **Extract the thread.** From pasted text or a screenshot, capture: who replied (name, title, company),

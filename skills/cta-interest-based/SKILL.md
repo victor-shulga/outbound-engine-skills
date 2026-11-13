@@ -20,6 +20,17 @@ it checks interest and does not ask for a call, a meeting or a calendar slot.
 
 Answer in the user's language. The CTA itself is written in the prospect's language.
 
+## Required tools
+
+Install these before running the skill. None of them is strictly required, the skill also runs on pasted input, but without them the result gets noticeably worse: you review only the steps someone pasted, and a call ask hidden in step 4 of a live campaign ships anyway.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| Instantly (MCP) | pull every step and variant of live email campaigns to check each CTA line | Recommended | you paste the copy by hand and may miss steps or variants |
+| HeyReach (MCP) | pull LinkedIn invite notes and messages to check the same rule there | Recommended | LinkedIn messages are reviewed only if someone pastes them |
+
+Alternatives: lemlist or Smartlead can stand in for Instantly; Expandi or Aimfox can stand in for HeyReach.
+
 ## The rule
 
 > **Cold sequences use interest-based CTAs only. No call or meeting asks.**

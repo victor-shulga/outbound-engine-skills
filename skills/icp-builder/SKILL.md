@@ -7,13 +7,23 @@ description: Use when asked to build an ICP from scratch, define the ideal custo
 
 Build a structured ICP definition from existing knowledge, call recordings, and win/loss data. Output a reusable ICP file that all other skills can reference.
 
-## What you need
+## Required tools
 
-- Any of the following (provide as much as you have):
-  - Description of your best current customers
-  - Sales call recordings or transcripts
-  - Win/loss notes
-  - Industry intuition about who benefits most
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: the ICP is built from memory, and ring 4 (existing clients, partners, vendors) is the one that gets missed.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| CRM (Twenty, HubSpot) | best customers, win/loss notes, and the ring 4 list of clients, former clients and partners | Required | you list customers from memory; ring 4 is incomplete |
+| Call recorder transcripts (Fathom, Fireflies or your own recorder) | prospect language for situational fit, verbatim | Recommended | situational fit is written in your words, not the buyer's |
+| Firecrawl (MCP) | reading your site and your best customers' sites instead of pasted text | Recommended | you paste descriptions by hand |
+| AI Ark, Icypeas or MoltSets (MCP) | checking headcount, industry and geography of your best customers | Recommended | firmographic ranges are estimates |
+
+Inputs to provide (as much as you have):
+
+- Description of your best current customers
+- Sales call recordings or transcripts
+- Win/loss notes
+- Industry intuition about who benefits most
 - What problem you solve and for whom
 
 ## Process

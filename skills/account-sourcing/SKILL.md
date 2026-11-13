@@ -7,6 +7,19 @@ description: Builds a filtered, scored account list from job-posting signals —
 
 Job postings are the cheapest honest signal in B2B. A company that publishes "our application is a majestic monolith" has spent money saying it and will not walk it back.
 
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: without Apify there is no posting text to search, so the list loses its proof quotes and most of its score.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| Apify | job postings from ATS career sites (`fantastic-jobs/career-site-job-listing-api`, ~$0.012 per posting) | Required | no full-text search in descriptions; LinkedIn titles carry no problem language |
+| Python 3 | `scripts/filter_score.py`, the exclusion pass and the 135-point score | Required | filtering and scoring are done by hand in the chat; slow and inconsistent past a few dozen rows |
+| BuiltWith or Wappalyzer | stack signals, optional second pass | Recommended | stack-based filters and points are skipped |
+| AI Ark, Icypeas or MoltSets (MCP) | filling headcount, industry or founding year where the posting's company fields are blank | Recommended | blank fields lose points and those rows stay capped |
+
+Alternatives: TheirStack or PredictLeads can stand in for Apify
+
 ## Why ATS aggregators, not LinkedIn
 
 LinkedIn job scraping gives titles. What matters is the **body of the description** — that is where a company names its own problem. Use an aggregator that indexes career sites across ATS platforms (Greenhouse, Ashby, Lever, Workday and friends) and exposes:
@@ -103,11 +116,3 @@ CSV, one row per company:
 `rank · score · tier · company · domain · headcount · industry · founded · hq · open_roles · days_open · target_role · proof_snippet`
 
 Report alongside it: raw rows pulled, rows dropped and why, median headcount, median founding year, how many carry a verified quote, and the total spend.
-
-## Requirements
-
-| Integration | Used for | Required? |
-|---|---|---|
-| Apify MCP | job postings from ATS career sites | yes |
-| Python 3 | filter and scoring script | yes |
-| BuiltWith / Wappalyzer | stack signals, optional second pass | no |

@@ -16,6 +16,20 @@ description: >
 The report is a **standalone readable narrative page**, not a row-dump into a matrix DB.
 The data store and the report are two separate artifacts.
 
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: the week's numbers come from hand-typed exports, and lifetime-only totals get passed off as this week.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| HeyReach (MCP) | LinkedIn numbers per campaign and per sender, plus every reply of the week | Required | you export CSV per sender; per-week cuts may be impossible |
+| Instantly (MCP) | email numbers per campaign and the week's replies | Required | the email channel is reported as dark (no data), not as zero |
+| Google Sheets | keep last week's snapshot for lifetime-only platforms (weekly delta = this snapshot minus last) | Recommended | no weekly delta for lifetime-only tools; the report says so |
+| CRM (Twenty or HubSpot) | check that warm replies are staged and calls booked are counted | Recommended | calls booked come from memory; unstaged warm replies go unnoticed |
+| Notion (MCP) | create the report as a new page in the client's reporting area | Required | the report comes back as markdown in chat for you to paste |
+
+Alternatives: Aimfox, Expandi or lemlist can stand in for HeyReach; lemlist or Smartlead can stand in for Instantly.
+
 ## Hard rules
 
 - NEVER dump rows into a matrix DB and point at a kanban. Matrix DB = data store;

@@ -9,6 +9,20 @@ Find verified emails by running sources in sequence and stopping at the first ve
 The point of a waterfall is not coverage alone — it is **coverage at a known cost per contact**.
 A cascade without prices is a list of vendor names.
 
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: the cascade stops after one source, the find rate drops, and unverified addresses reach the sender.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| AI Ark (MCP) | Entry A2: people search keyed on one domain, two people per account | Recommended | names have to exist before the skill runs; Entry A2 is skipped |
+| Icypeas (MCP) | primary email finder in the cascade | Required | no cascade; addresses come only from what you were handed |
+| LeadMagic or Findymail | secondary finder that picks up what the first misses | Recommended | the find rate stops at the first source's coverage |
+| MoltSets (MCP) | Entry B: LinkedIn URL to name + company + domain, then email and carrier-verified mobile | Recommended | LinkedIn-only rows go to a manual queue |
+| ZeroBounce or another validator | verifying every result, including free ones | Required | unverified addresses go out; bounce rate and the domain take the hit |
+
+Alternatives: a workflow runner with a people-search node (Freckle over Apollo: authenticate, then pin the org id) can stand in for AI Ark; MoltSets can stand in for Icypeas as the primary finder.
+
 ## Two entry points, two different cascades
 
 Which one you are in decides everything downstream.
@@ -185,12 +199,3 @@ flatters a bad run.
   after the input is fixed, not on a schedule.
 - Role addresses (info@, hello@, sales@) are not contacts. They belong in a separate column, never in
   a personal-address campaign.
-
-## Requirements
-
-| Integration | Used for | Required? | Setup |
-|---|---|---|---|
-| A workflow runner with a people-search node (Freckle over Apollo, or equivalent) | domain → people with contact data | for Entry A2 | authenticate, then pin the org id |
-| Email finders (LeadMagic, Findymail, or equivalents) | the email cascade | yes | your own accounts |
-| Validator (ZeroBounce or equivalent) | every result, including free ones | yes | your own account |
-| Profile resolver | the LinkedIn-URL entry point | for Entry B | part of the same runner |

@@ -7,7 +7,17 @@ description: Use when asked to check email deliverability, audit sending infrast
 
 Audit the sending infrastructure and return a pass/fail verdict on every deliverability dimension — with specific fixes for anything that fails.
 
-## What you need
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: SPF, DKIM, DMARC and blacklist verdicts become whatever you were told instead of what the DNS actually returns.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| MXToolbox or `dig` | SPF, DKIM, DMARC and MX lookup, blacklist status of every sending domain | Required | you paste DNS records by hand; blacklist status is unknown |
+| Sending platform (Instantly, lemlist) | mailbox settings, daily volume, send window, warm-up status | Recommended | you describe the settings; the sending behavior section relies on your word |
+| Warm-up and inbox placement tool (Instantly, Mailreach) | warm-up volume and inbox placement rate per mailbox | Recommended | the 90% inbox placement check cannot be passed, only flagged |
+
+Inputs to provide:
 
 - Sending domain(s) and mailbox addresses
 - Sending platform being used

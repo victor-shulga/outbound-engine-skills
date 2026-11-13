@@ -7,7 +7,18 @@ description: Use when asked to build a buyer persona, profile a specific role, o
 
 Build a detailed buyer persona for a specific role — what they care about, how they think, what they fear, and how to write to them.
 
-## What you need
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: the persona is written from general knowledge of the title instead of the words real people in that role use.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| AI Ark, Icypeas or MoltSets (MCP) | finding 5–10 people with this title at ICP companies | Required | you supply the profiles by hand |
+| Apify | reading their LinkedIn profiles, posts and activity for language patterns | Required | power phrases and tone are generic, not taken from the persona |
+| Web search or Firecrawl (MCP) | job descriptions for the role: what success looks like | Recommended | primary KPI is inferred from the title |
+| Call recorder transcripts | how this role talks about the problem on real calls | Recommended | pains and objections stay hypotheses |
+
+Inputs to provide:
 
 - Role title(s) to profile
 - ICP context (company type, size, industry)

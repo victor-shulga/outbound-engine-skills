@@ -7,7 +7,18 @@ description: Use when asked to compare two campaign variants, determine a winner
 
 Compare two campaign variants, determine statistical significance, declare a winner, and recommend the next test.
 
-## What you need
+## Required tools
+
+Install these before running the skill. None of them is strictly required, the skill also runs on pasted input, but without them the result gets noticeably worse: variant numbers are copied by hand, and interested replies are counted from memory.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| Instantly (MCP) | pull per-step variant analytics: sends, opens, replies, interested replies | Recommended | you type the numbers in from the dashboard |
+| HeyReach (MCP) | pull numbers for LinkedIn message or invite-note tests | Recommended | LinkedIn tests run on hand-copied numbers |
+
+Alternatives: lemlist or Smartlead can stand in for Instantly; Aimfox or Expandi can stand in for HeyReach.
+
+Inputs to have ready:
 
 - Variant A metrics: sends, opens, replies, interested replies
 - Variant B metrics: same

@@ -7,12 +7,23 @@ description: Use when asked to build a multi-channel sequence, coordinate email 
 
 Design a coordinated email + LinkedIn outreach sequence — with correct timing, channel order, and message coordination across both channels.
 
-## What you need
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: the conditional logic (invite accepted, email replied) stays a paper plan that nobody can check against what the tools can actually branch on.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| Instantly (MCP) | email track: step days, reply status per contact, pausing the email track when the person answers on LinkedIn | Required | you plan the email days by hand and check each branch in the tool yourself |
+| HeyReach (MCP) | LinkedIn track: invite, accept status, follow-up messages, daily invite limits | Required | accept status is unknown, so the 'if LinkedIn accepted' branches cannot be set |
+| CRM (Twenty or HubSpot) | one record per person so a reply on either channel stops the other one | Recommended | a person can get an email the day after replying on LinkedIn |
+
+Alternatives: PlusVibe, lemlist or Smartlead can stand in for Instantly; Expandi or Aimfox can stand in for HeyReach.
+
+Inputs to have ready:
 
 - Hypothesis name and ICP
 - Email sequence (already written or reference `sequence-writer`)
 - LinkedIn sequence (already written or reference linkedin-sequence)
-- Sending tools available (Instantly/PlusVibe for email, Heyreach/Expandi for LinkedIn)
 
 ## Multi-channel principles
 

@@ -10,6 +10,19 @@ Answers one question about a cold account: **is this profile ours, before anyone
 Everything here is readable without a conversation — what they do, who they serve, what they run.
 Nothing that only a call can establish belongs in this score. That is `lead-scoring`.
 
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: most rows end up with `data-gap` flags, and headcount can only come from the company's own site, which overstates it.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| Firecrawl (MCP) | reading each company's site: self-description, services, work shown, named team count | Required | you paste text per account; services fit is mostly `data-gap` |
+| AI Ark, Icypeas or MoltSets (MCP) | company page headcount (the source for tier), industry, specialties, open roles for the queue | Required | tier reads «verify manually» on every row |
+| Apify | LinkedIn company page and job posts when the database has no record | Recommended | more rows land in the no-signal queue |
+| Google Sheets | the output table, one row per account with every component in its own column | Recommended | output stays as a table in the chat |
+
+Alternatives: Clay can stand in for these databases; Exa (MCP) can stand in for Firecrawl.
+
 ## The rule that fixes most broken rubrics
 
 **Never score a dimension you already use as a stop-filter.**

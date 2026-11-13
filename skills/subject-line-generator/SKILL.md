@@ -7,7 +7,18 @@ description: Use when asked to write subject lines, improve open rates, or gener
 
 Generate 10+ subject line options for a given email, score each one, and return a ranked shortlist for testing.
 
-## What you need
+## Required tools
+
+Install these before running the skill. None of them is strictly required, the skill also runs on pasted input, but without them the result gets noticeably worse: the signal-reference lines paraphrase the signal, and the top 3 never get tested against each other.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| Firecrawl (MCP) | read the signal source (job post, news item, company page) so signal-reference lines use its exact wording | Recommended | subject lines are built from your summary of the signal |
+| Instantly (MCP) | set the top 3 as step variants and read reply rate per variant from past sends | Recommended | the shortlist is ranked on the 0-2 scores only, with no real results behind it |
+
+Alternatives: Exa can stand in for Firecrawl; lemlist or Smartlead can stand in for Instantly.
+
+Inputs to have ready:
 
 - Email body (step 1 at minimum)
 - ICP and persona context

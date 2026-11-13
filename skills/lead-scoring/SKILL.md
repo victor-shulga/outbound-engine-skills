@@ -20,6 +20,17 @@ This skill is the second half, and it **starts from the first**. A lead score th
 from scratch throws away the work already done and produces two different fit numbers for the same
 account.
 
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: post-contact blocks score 0 because engagement, named budgets and timelines are not where the skill can read them.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| CRM (Twenty, HubSpot) | prospect profile carried over, deal values, decision path, stage, opt-outs | Required | you paste every lead by hand; calibration on a clean cohort is not possible |
+| Outreach platform (HeyReach, Instantly) | replies, threads and engagement per lead | Recommended | engagement is scored from what you remember |
+| Call recorder transcripts | budget, timeline and who signs, as the lead said it | Recommended | deal and timeline blocks score 0 unless you type them in |
+| Google Sheets | the team's live scoring sheet and its bands | Recommended | bands stay the rubric defaults, not calibrated ones |
+
 ## The structure
 
 ```

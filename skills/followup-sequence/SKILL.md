@@ -7,7 +7,20 @@ description: Use when asked to write follow-ups, nurture warm non-responders, or
 
 Write follow-up messages for leads who engaged (opened, clicked, partial reply) but didn't convert — or for contacts who went cold after initial interest.
 
-## What you need
+## Required tools
+
+Install these before running the skill. None of them is strictly required, the skill also runs on pasted input, but without them the result gets noticeably worse: the follow-up type is picked from memory, and the 'new value' in the message is a guess because nobody checked what changed at the company.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| Instantly (MCP) | pull the original sequence, opens, clicks, replies and the date of the last touch for the lead | Recommended | you state the lead status by hand; Type A versus B gets mixed up |
+| HeyReach (MCP) | pull the LinkedIn conversation for leads who went quiet there | Recommended | Type B and C messages cannot quote the previous conversation exactly |
+| CRM (Twenty or HubSpot) | read notes and the date agreed in a timing objection (Type D) | Recommended | Type D fires on a guessed date |
+| Firecrawl (MCP) | check company news, hires and posts for the one new piece of value | Recommended | the follow-up repeats the original angle, and the skill tells you not to send it |
+
+Alternatives: lemlist or Smartlead can stand in for Instantly; Aimfox or Expandi can stand in for HeyReach; Exa can stand in for Firecrawl.
+
+Inputs to have ready:
 
 - Original sequence that was sent
 - Current status of the lead (opened but didn't reply / replied once then went cold / attended event but didn't book)

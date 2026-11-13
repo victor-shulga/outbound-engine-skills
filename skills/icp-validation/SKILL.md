@@ -7,7 +7,20 @@ description: Use when asked to validate a company against ICP criteria, score fi
 
 Validate a company against defined ICP criteria and return a scored fit verdict.
 
-## What you need
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: size and role fit are scored from the website alone, so headcount, open roles and the presence of the target persona are guesses.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| Firecrawl (MCP) | pulling the company website: product type, industry, team size hints, tech signals | Required | you paste the site text; signals on deeper pages are missed |
+| AI Ark, Icypeas or MoltSets (MCP) | headcount, leadership and whether the target persona exists at the company | Required | size and role fit fall back to public signals only and are flagged |
+| Apify | LinkedIn company page: recent hires, open roles, recent posts for the signal score | Recommended | signal fit relies on the website and search only |
+| CRM (Twenty, HubSpot) | checking whether the company is already a client, partner or vendor | Recommended | the «already ours» skip reason cannot be checked |
+
+Alternatives: Exa (MCP) can stand in for Firecrawl.
+
+Inputs to provide:
 
 - Company name or website URL
 - ICP definition (provide inline or reference your ICP file)

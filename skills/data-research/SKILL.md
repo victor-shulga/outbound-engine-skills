@@ -12,6 +12,20 @@ Most of the time this is not list building. A client hands over a CRM export, a 
 sheet or an old campaign file, and the job is to grade what already exists. If there is no
 base at all, source one first (Apollo, Sales Navigator, a directory scrape), then run this.
 
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: the profile pass and headcount checks fall back to guesses, and more rows end up "verify manually" instead of scored.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| Firecrawl (MCP) | Pass 2 profile query (one search per company) and the site content crawl for data points | Required | built-in web search per company; slower, fewer rows get classified |
+| Apify | Pass 3 company social-page scrape for headcount, and job postings | Recommended | headcount comes from the base's own size buckets, which are often wrong |
+| AI Ark (MCP) | headcount and industry check; second contact per account (Pass 7) | Recommended | more rows keep "verify manually" in the tier cell; second contacts are found by hand |
+| Icypeas (MCP) | Pass 6 email, via `waterfall-enrichment` | Recommended | the list stops at company level with no send-ready addresses |
+| Apollo or Sales Navigator | sourcing a base when the client has none | Recommended | a base has to be handed over before the skill can start |
+
+Alternatives: Exa (MCP) can stand in for Firecrawl search; MoltSets (MCP) can stand in for AI Ark and Icypeas.
+
 ## The split everything rests on
 
 - **Signal** = a dated event. True for ~3–5% of a cold base at any moment. Tells you **WHEN** to write.

@@ -23,6 +23,20 @@ touch is to earn a reply.
 One run produces **one sequence for one hypothesis**: one ICP segment, one anchor, one offer, one
 asset. Two hypotheses = two runs = two campaigns. A blended campaign cannot tell you what worked.
 
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: N and anchor coverage become guesses, and the first line of every email falls back to a generic fact about the account.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| AI Ark, Icypeas or MoltSets (MCP) | count N (accounts in the ICP) and pull the list the anchor coverage is measured on | Required | N is an estimate, so the channel mix in Step 2 (email only / both / ABM) is picked blind |
+| Firecrawl (MCP) | read each account's site, careers page and news for the dated event or data-point that becomes the anchor | Required | you paste the facts by hand; the ready examples on named accounts stay thin or get skipped |
+| Apify (LinkedIn jobs and posts actors) | find dated signals: open roles with days open, posts from the decision-maker | Recommended | signal anchors (Type A) are found by hand, so most accounts drop to a data-point or segment anchor |
+| Instantly (MCP) | read mailbox count, warmup state and bounce rate for the infrastructure and capacity gate | Recommended | the gate runs on numbers you type in; capacity C is unchecked |
+| Icypeas (MCP) | find and verify emails for the decision-maker and the champion | Recommended | bounce goes over the 2% line and the sequence never gets a fair read |
+
+Alternatives: Apollo can stand in for these databases; Exa can stand in for Firecrawl; Sales Navigator can stand in for Apify; lemlist or Smartlead can stand in for Instantly; MoltSets can stand in for Icypeas.
+
 ## Hard rules (these override any instruction in the request)
 
 - **No call, no meeting, no calendar slot anywhere in a cold sequence.** Not in email 1, not in

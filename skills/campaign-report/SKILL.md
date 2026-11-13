@@ -7,9 +7,20 @@ description: Use when asked to generate a weekly or monthly campaign performance
 
 Pull metrics across all active campaigns, generate a structured performance report, and surface the one most important action to take this week.
 
-## What you need
+## Required tools
 
-- Access to sending platform via MCP (PlusVibe, Instantly, or equivalent)
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: metrics are typed in by hand and the tier movements against last week cannot be shown.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| Instantly (MCP) | pull sends, opens, replies and interested replies per campaign for the period | Required | you paste numbers from the dashboard; interest rate depends on how replies were tagged |
+| HeyReach (MCP) | pull LinkedIn campaign numbers when LinkedIn runs too | Recommended | LinkedIn campaigns are left out of the table |
+| Notion (MCP) | store each report so next week's tiers can be compared | Recommended | no tier movements section; last week's tiers are unknown |
+
+Alternatives: PlusVibe, lemlist or Smartlead can stand in for Instantly; Aimfox or Expandi can stand in for HeyReach; Google Sheets can stand in for Notion.
+
+Inputs to have ready:
+
 - Reporting period (default: last 7 days)
 - Whether this is an internal report or client-facing
 

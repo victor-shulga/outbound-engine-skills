@@ -23,7 +23,18 @@ the campaign.
 Run it every round, not once per client. Every new batch has its own duplicates, its own stale
 signals and its own empty fields.
 
-## What you need
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: suppression is reported as NOT CHECKED and the validation layer has nothing to read, so the two STOP-level risks go unchecked.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| Python 3 | `scripts/check_list.py` (standard library only), the counted GO / GO WITH FIXES / STOP verdict | Required | the seven layers are checked by eye; counts and the verdict are guessed |
+| Icypeas, MoltSets or ZeroBounce | the verification status column the script reads (it does not verify addresses itself) | Required | no verification column means STOP at layer 2 |
+| CRM export (Twenty, HubSpot) | suppression: everyone already in a conversation, current clients | Recommended | layer 1 reports suppression as NOT CHECKED |
+| Instantly, HeyReach or lemlist | export of contacts in active campaigns, mailbox count and daily caps | Recommended | overlap with live campaigns is missed; capacity math uses your guess |
+
+**Inputs the skill expects:**
 
 - The final CSV as it will be uploaded (every column the sequence uses)
 - Suppression files, each as a CSV: CRM export of everyone already in a conversation, contacts

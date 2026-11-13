@@ -7,6 +7,19 @@ description: Builds a 50-trigger signal catalog for one niche, scores every sign
 
 A signal catalog is the raw material of signal-based outbound. Fifty triggers, grouped by source, each with a detection tool, a freshness window, and a score.
 
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: the volume gate (300 / 500 accounts) is checked against estimates instead of real counts, and detection tools are more often `уточнити`.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| AI Ark, Icypeas or MoltSets (MCP) | real account counts per signal and per bundle for the volume gate | Required | available volume is an estimate; the bundle recommendation is weaker |
+| Apify | checking that a detection actor exists for job posts, LinkedIn, maps and similar sources | Recommended | more rows carry `уточнити` in the detection-tool column |
+| Web search | finding the public databases, tenders and permit registers the niche publishes into | Recommended | the public-records group is built from memory |
+| Telegrin | detecting intent signals in communities (Telegram, Reddit, LinkedIn, X) | Recommended | the intent group lists fewer detectable rows |
+
+Alternatives: Apollo or Sales Navigator can stand in for these databases for account counts.
+
 ## The one distinction that matters
 
 Every row is one of two tracks. Get this wrong and the whole catalog is decoration.

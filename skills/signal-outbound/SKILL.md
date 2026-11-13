@@ -11,6 +11,20 @@ The richest source of those words is job postings. A company that writes "our ap
 
 Everything downstream follows from one split: **the event tells you when to write, the data point tells you what to say.**
 
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: the router still names the next step, but the steps it routes to stall: no posting text at step 5, no verified addresses at step 6, no own numbers when diagnosing a live campaign.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| Apify | step 5: job postings with full description text (via `account-sourcing`) | Required | no source of public problem language; the path falls back to generic lists |
+| Icypeas (MCP) plus a validator | step 6: verified work emails (via `waterfall-enrichment`) | Required | gate G6 cannot pass |
+| AI Ark (MCP) | gate G3: counting accounts per hypothesis; people search at step 6 | Recommended | the volume gate rests on estimates |
+| Python 3 | the scripts in `account-sourcing` and `pre-launch-data-check` | Recommended | scoring and the base check are done by hand |
+| Instantly, HeyReach or lemlist | reading a live campaign's numbers to route by symptom | Recommended | you paste stats in; reading per hypothesis gets harder |
+
+Alternatives: TheirStack or PredictLeads can stand in for Apify; MoltSets (MCP) can stand in for AI Ark and Icypeas.
+
 ## Locating the caller
 
 Ask at most three questions, and stop as soon as the answer is determined.

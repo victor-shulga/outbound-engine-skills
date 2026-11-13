@@ -7,7 +7,20 @@ description: Use when asked to generate campaign hypotheses, build a testing mat
 
 Take an ICP, a set of buyer personas, and a list of signals — generate a full testing matrix of campaign hypotheses to run.
 
-## What you need
+## Required tools
+
+Install these before running the skill. None of them is strictly required, the skill also runs on pasted input, but without them the result gets noticeably worse: hypotheses are ranked on wording alone, without checking how many companies carry each signal or whether a real example of it exists.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| AI Ark, Icypeas or MoltSets (MCP) | company and people counts per persona × signal, to see which hypotheses have enough market to test | Recommended | counts are estimates; a priority-1 hypothesis may have too few accounts to test |
+| Sales Navigator | persona counts by title and seniority inside the ICP | Recommended | persona authority is judged from titles on paper |
+| Firecrawl (MCP) | reading the company's site and case studies for proof behind each angle | Recommended | angles rest on what you paste; a social-proof angle may have no real case behind it |
+| Apify | pulling 3-5 live examples per signal (job posts, LinkedIn posts) before generating | Recommended | vague signals stay vague; you collect examples by hand |
+
+Alternatives: Apollo can stand in for these databases; Exa (MCP) can stand in for Firecrawl.
+
+**Inputs the skill expects:**
 
 - ICP definition (industry, company size, geography)
 - Target personas (2–5 roles you want to reach)

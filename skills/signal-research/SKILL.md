@@ -26,6 +26,21 @@ Two run modes:
 - **Delta run** — base was researched before; re-scan for burnt signals and new fires. Most bases
   rot in ~45 days, and nobody notices because the status column keeps saying Hot.
 
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: per-account detection falls back to plain web search, so the hit rate drops and evidence links and dates go missing.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| Firecrawl (MCP) | Pass B: reading each account's site, careers and news pages, and harvesting data points in the same crawl | Required | built-in web fetch only; slower, misses JS pages, Pass B covers fewer accounts |
+| Exa (MCP) | Pass B: per-account search for dated news, launches and posts | Recommended | generic web search with more name-collision false positives |
+| Apify | Pass A and C: bulk job-posting and LinkedIn pulls across the whole base | Recommended | hiring signals are checked account by account, at several times the cost |
+| AI Ark, Icypeas or MoltSets (MCP) | Pass A: bulk job-post and company search joined back by domain | Recommended | fewer bulk sources, so expensive per-account research carries the run |
+| Sales Navigator or Apollo | Pass C: platform filters for what remains | Recommended | Pass C is skipped and the report says so |
+| Notion MCP | the coverage report as a readable page | Recommended | the report stays a local file |
+
+Alternatives: Clay (Claygent) can stand in for Firecrawl and Exa in Pass B; TheirStack or PredictLeads can stand in for Apify for job postings.
+
 ## Setup (once per session)
 
 Resolve the install dir dynamically — never hardcode:

@@ -7,7 +7,19 @@ description: Use when asked to write a LinkedIn outreach sequence, connection re
 
 Write a LinkedIn-specific outreach sequence — connection request note + follow-up messages — tied to a signal and persona. Different rules than email.
 
-## What you need
+## Required tools
+
+Install these before running the skill. None of them is strictly required, the skill also runs on pasted input, but without them the result gets noticeably worse: the connection note and follow-up 2 lean on the persona in general because nobody read this person's profile or recent posts.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| Apify (LinkedIn profile and posts actors) | read the person's role, tenure and recent posts for the note and for the new angle in follow-up 2 | Recommended | follow-up 2 cannot reference what they posted; you paste the profile by hand |
+| Firecrawl (MCP) | read the company site, job posting or news item behind the signal | Recommended | the signal line is written from your summary and may miss the exact detail |
+| HeyReach (MCP) | load the note and follow-ups as a campaign and check limits | Recommended | you copy the messages into the tool by hand |
+
+Alternatives: Sales Navigator can stand in for Apify; Exa can stand in for Firecrawl; Expandi or Aimfox can stand in for HeyReach.
+
+Inputs to have ready:
 
 - ICP and persona (role, company type)
 - Signal the outreach is built around

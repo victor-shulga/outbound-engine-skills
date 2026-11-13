@@ -24,6 +24,19 @@ quoted replies; metric names and taxonomy tags are written in plain words from t
 
 ---
 
+## Required tools
+
+Install these before running the skill. It still runs without the ones marked **Required**, but the result gets noticeably worse: replies arrive without what the SDR sent before them, so the post-mortem tags (SDR errors) and the root cause become guesses.
+
+| Tool | Used for | Required? | Without it |
+|---|---|---|---|
+| HeyReach (MCP) | pull LinkedIn conversations with both sides of every thread | Required | you export CSV or paste replies; our side of the thread is usually missing |
+| Instantly (MCP) | pull email replies with the thread and campaign metrics for the funnel section | Required | the funnel section runs on numbers typed in by hand |
+| Google Sheets | read a client's reply tracker when that is the source | Recommended | export it to CSV and attach the file |
+| Notion (MCP) | write the 9-section audit as a page | Required | the audit comes back as markdown in chat and you paste it into a page yourself |
+
+Alternatives: Aimfox, Expandi or lemlist can stand in for HeyReach; lemlist or Smartlead can stand in for Instantly.
+
 ## Step 0 — Get the data (input is anything)
 
 Detect the source from what you're given and pull it. Do NOT ask for a reformat.

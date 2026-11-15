@@ -1,6 +1,6 @@
 # outbound-engine
 
-Full outbound execution engine for B2B service companies: 34 skills covering ICP and personas, signal sourcing, prospect-list research, enrichment, hypotheses, sequence copy, personalization, deliverability, reply handling, A/B testing and reporting.
+Full outbound execution engine for B2B service companies: 35 skills covering ICP and personas, signal sourcing, prospect-list research, enrichment, hypotheses, sequence copy, personalization, deliverability, reply handling, A/B testing and reporting.
 
 Part of the GTM-system methodology by [Victor Shulga](https://victorshulga.com) (Fractional CRO).
 
@@ -71,6 +71,7 @@ Scoring is deliberately two skills. Mixing what you can read about a company wit
 **Launch and read**
 
 - `pre-launch-data-check` — the final file, row by row, in seven layers: suppression, verification, rendered variables, routing, hygiene, signal freshness, volume. GO / GO WITH FIXES / STOP, with the rows to fix (ships a Python script).
+- `outreach-text-gate` — the three personalised fields (observation, guess, question) of every row against nine stop-filter conditions: ok / review / general, a script for the seven mechanical ones and a read of the source for the two that need judgment (ships a Python script).
 - `deliverability-audit` — domains, mailboxes, SPF/DKIM/DMARC, warm-up. Runs before anything is sent, not after the numbers go bad.
 - `reply-objection-handler` — ONE reply in, one ready-to-send message out: triage for intent and speed, classify the objection, write the response, set the CRM and platform action
 - `reply-audit` — the batch view: many replies down to root cause — targeting, message, or pitch
@@ -95,6 +96,8 @@ The two reply skills are a pair: the handler is the surgeon on one thread, the a
 Skills degrade gracefully: without MCP connections they work from pasted data (CSV, sheets, text).
 
 ## Changelog
+
+**0.9.0** — `outreach-text-gate` added (35): the stop-filter for the text itself. `pre-launch-data-check` looks at addresses, suppression and rendered variables; nothing checked whether the observation is true to its source, the guess is about the same thing, and the question asks for interest rather than a call. The gate marks every row ok / review / general before upload.
 
 **0.8.1** — `reply-objection-handler`: four templates added from live threads: a fast price ask, a self-cancelled inbound booking, a reply that kills the opener's premise, and silence after "we'll send projects when they land".
 

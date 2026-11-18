@@ -11,7 +11,7 @@
     {
       "name": "outbound-engine",
       "source": "./",
-      "description": "35 Claude Code skills that execute the outbound block of a GTM system for B2B service companies (agencies, outsourcing, consulting). A master skill routes the ten-step path and enforces the gate between steps: ICP and personas, signal catalog, ATS job-posting sourcing, niche data-source discovery, signal and data-point research over an existing base, a full raw-list-to-campaigns run, prospect-list research with per-row costs, contact and email enrichment through a priced cascade, two-stage scoring (pre-contact and post-contact), angle finding, sequence copy with interest-only CTAs, a cold-email infrastructure and copy-framework playbook, a personalization pipeline, a stop-filter for the personalised text, a pre-launch data check, deliverability, per-reply objection handling, forensic reply audits, A/B analysis, benchmark verdicts on outbound metrics and weekly reporting. Built and battle-tested by Victor Shulga (Fractional CRO).",
+      "description": "35 Claude Code skills that run the outbound block of a GTM system for B2B service companies. A master skill routes the ten-step path with a gate between steps: ICP and personas, signal catalog, list building and enrichment, two-stage scoring, angles and sequence copy, deliverability, pre-launch data check, reply handling and audits, A/B analysis and weekly reporting. Built and battle-tested by Victor Shulga (Fractional CRO).",
       "version": "0.9.0",
       "keywords": [
         "outbound",

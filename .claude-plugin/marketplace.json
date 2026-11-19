@@ -1,7 +1,7 @@
 {
   "name": "outbound-engine-skills",
   "metadata": {
-    "description": "Full outbound execution engine for B2B service companies: 35 skills covering ICP and personas, signal sourcing, prospect-list research, enrichment, hypotheses, sequence copy, personalization, deliverability, reply handling, A/B testing and reporting."
+    "description": "Full outbound execution engine for B2B service companies: 36 skills covering ICP and personas, signal sourcing, prospect-list research, enrichment, hypotheses, sequence copy, personalization, deliverability, reply handling, A/B testing and reporting."
   },
   "owner": {
     "name": "Victor Shulga",
@@ -11,8 +11,8 @@
     {
       "name": "outbound-engine",
       "source": "./",
-      "description": "35 Claude Code skills that run the outbound block of a GTM system for B2B service companies. A master skill routes the ten-step path with a gate between steps: ICP and personas, signal catalog, list building and enrichment, two-stage scoring, angles and sequence copy, deliverability, pre-launch data check, reply handling and audits, A/B analysis and weekly reporting. Built and battle-tested by Victor Shulga (Fractional CRO).",
-      "version": "0.9.0",
+      "description": "36 Claude Code skills that run the outbound block of a GTM system for B2B service companies. A master skill routes the ten-step path with a gate between steps: ICP and personas, signal catalog, list building and enrichment, two-stage scoring, angles and sequence copy, deliverability, pre-launch data check, reply handling and audits, A/B analysis and weekly reporting. Built and battle-tested by Victor Shulga (Fractional CRO).",
+      "version": "0.10.0",
       "keywords": [
         "outbound",
         "cold-email",

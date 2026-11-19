@@ -1,6 +1,6 @@
 # outbound-engine
 
-Full outbound execution engine for B2B service companies: 35 skills covering ICP and personas, signal sourcing, prospect-list research, enrichment, hypotheses, sequence copy, personalization, deliverability, reply handling, A/B testing and reporting.
+Full outbound execution engine for B2B service companies: 36 skills covering ICP and personas, signal sourcing, prospect-list research, enrichment, hypotheses, sequence copy, personalization, deliverability, reply handling, A/B testing and reporting.
 
 Part of the GTM-system methodology by [Victor Shulga](https://victorshulga.com) (Fractional CRO).
 
@@ -65,6 +65,7 @@ Scoring is deliberately two skills. Mixing what you can read about a company wit
 - `followup-sequence` — non-responders and re-engagement of a burnt base
 - `angle-finder` — from which side to enter, before any copy: 3 angles for a persona, or one angle with hooks for one LinkedIn profile
 - `cta-interest-based` — the CTA rule for every outbound message: interest only, never a call or a time slot; the approved bank and the banned list
+- `cold-email-formats` — 24 named first-touch formats: filters them by the anchor and data the list really has and by the sender's tone, proposes three from different families as ready drafts, logs what was used so the next campaign does not repeat the shape
 - `cold-email-playbook` — sending infrastructure from zero, 13 named copy frameworks, benchmarks and rules, re-engagement of dead and closed-lost leads
 - `multi-channel-orchestrator` — the touch grid, set before the copy, because spacing changes what each message can say
 
@@ -96,6 +97,8 @@ The two reply skills are a pair: the handler is the surgeon on one thread, the a
 Skills degrade gracefully: without MCP connections they work from pasted data (CSV, sheets, text).
 
 ## Changelog
+
+**0.10.0** — `cold-email-formats` added (36): a library of 24 first-touch email formats, so the pick of the email shape is deliberate per hypothesis instead of the same "observation → pitch → call?" every campaign. The Master Task «Write email steps» pointed at it; now it installs.
 
 **0.9.0** — `outreach-text-gate` added (35): the stop-filter for the text itself. `pre-launch-data-check` looks at addresses, suppression and rendered variables; nothing checked whether the observation is true to its source, the guess is about the same thing, and the question asks for interest rather than a call. The gate marks every row ok / review / general before upload.
 

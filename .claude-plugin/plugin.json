@@ -1,7 +1,7 @@
 {
   "name": "outbound-engine",
-  "version": "0.9.0",
-  "description": "35 Claude Code skills that run the outbound block of a GTM system for B2B service companies. A master skill routes the ten-step path with a gate between steps: ICP and personas, signal catalog, list building and enrichment, two-stage scoring, angles and sequence copy, deliverability, pre-launch data check, reply handling and audits, A/B analysis and weekly reporting. Built and battle-tested by Victor Shulga (Fractional CRO).",
+  "version": "0.10.0",
+  "description": "36 Claude Code skills that run the outbound block of a GTM system for B2B service companies. A master skill routes the ten-step path with a gate between steps: ICP and personas, signal catalog, list building and enrichment, two-stage scoring, angles and sequence copy, deliverability, pre-launch data check, reply handling and audits, A/B analysis and weekly reporting. Built and battle-tested by Victor Shulga (Fractional CRO).",
   "author": {
     "name": "Victor Shulga",
     "url": "https://github.com/victor-shulga"
